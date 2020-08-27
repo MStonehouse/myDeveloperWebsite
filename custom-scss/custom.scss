@@ -1,0 +1,62 @@
+//$body-bg: #0000ff;
+
+//@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap);
+//@import url(https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap);
+//$dancing-script: 'Dancing Script', serif;
+//@import "../bootstrap/scss/variables";
+
+//$font-family-sans-serif: 'Red Hat Display';
+//$font-family-sans-serif: 'Red Hat Display';
+//$font-family-sans-serif: --font-family-sans-serif;
+
+// sass uses the $ symbol to make something a variable
+
+// this is the base font that will be applied to all of bootstrap
+//$font-family-sans-serif
+//$font-family-monospace
+//$font-family-base
+
+// these are the font groupings that allow for using a native font stack
+// 1 - -apple-system, BlinkMacSystemFont,
+
+// 2 - “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”,
+// 3 - “Helvetica Neue”, sans-serif;
+
+//$font-family-sans-serif:      "Red Hat Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+//$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+// this is an alternative native font stack from an article. the link to the article is below
+// https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, sans-serif;
+
+/*!
+* Custom style changes begin
+*/
+
+a {
+  outline: 0;
+}
+
+button {
+  outline: 0 !important;
+}
+
+span {
+  //outline: 0 !important;
+}
+
+@media (min-width: 768px) {
+
+}
+
+/*!
+* Custom style changes end
+*/
+
+// this is for all of the bootstrap headings
+//$headings-font-family: "Dancing Script";
+
+
+
+// add all custom scss above this line or it will break the sass build process
+@import "../bootstrap/scss/bootstrap";
