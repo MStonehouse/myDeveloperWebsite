@@ -15,6 +15,8 @@ $theme-colors: (
   "nav": #00ff00
 );
 
+
+
 /*
 // this works for editing the font size but it's obviously not the way to go about it.
 @media all and (max-width: 1200px) {
@@ -38,6 +40,7 @@ $theme-colors: (
 // make the fonts responsive here, change font size at break points
 html {
   font-size: 0.9rem;
+  /*font-size: 1.2vw;*/
 }
 
 @include media-breakpoint-up(sm) {
