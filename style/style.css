@@ -46,6 +46,24 @@ html {
   }
 }
 
+/* set background image for body */
+/*
+body {
+  background-image: url('../assets/bg2.jpg');
+  border: 2px solid red;
+}
+*/
+/* make div transparent begin */
+/*
+.jumbotron {
+  background: none !important;
+}
+
+.container {
+  background: white;
+}
+*/
+/* make div transparent end */
 /* begin project tile effect styling */
 /* https://www.w3schools.com/howto/howto_css_image_overlay.asp */
 .image-project-container {
