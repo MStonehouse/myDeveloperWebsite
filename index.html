@@ -1,57 +1,120 @@
 <!DOCTYPE html>
 <html lang="en" class="min-vh-100">
-  <head>
-    <title>Stonehouse Digital</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- description meta -->
-  	<meta name="description" content="">
-  	<meta name="keywords" content="">
-  	<meta name="author" content="">
-  	<meta name="Copyright" content="Copyright Mike Stonehouse. All Rights Reserved.">
+<head>
+  <title>Stonehouse Digital</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- dont forget to add the apple touch icon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="#">
+  <!-- description meta -->
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="Copyright" content="Copyright Mike Stonehouse. All Rights Reserved.">
 
-    <!-- preload image -->
-     <link rel="preload" as="image" href="<image location>">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- dont forget to add the apple touch icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="#">
 
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/b004ee397a.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- preload image -->
+  <link rel="preload" as="image" href="<image location>">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/b004ee397a.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
 
-  </head>
-  <body class="min-vh-100 d-flex flex-column"> <!-- d-flex flex-column  -->
-    <!-- <nav class="navbar sticky-top navbar-dark bg-dark"> --> <!--  navbar-expand-lg (this will uncollapse nav at lg break point) -->
-    <nav class="navbar py-0 sticky-top navbar-light bg-light shadow-sm">
-      <!-- <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"> -->
-      <a class="navbar-brand" href="#">
-        <!-- <img src="assets/mics.png" width="30" height="30" alt=""> -->
-        <h4 class="navbar-text my-0 align-middle">Stonehouse Digital</h4>
-      </a>
-      <!-- targeting for closing the and opening the menu is done by targeting the class of the collapsable item. in this case it is #navbarSupportedContent -->
-      <button class="navbar-toggler px-2 py-0 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+</head>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav px-4 mb-2 mr-auto">
-          <div class="dropdown-divider mb-3"></div>
-          <a class="nav-item nav-link active" href="#">Home</a>
-          <a class="nav-item nav-link" href="#">About</a>
-          <a class="nav-item nav-link" href="#">Contact</a>
-        </ul>
-      </div>
-    </nav>
+<body class="min-vh-100 d-flex flex-column bg-transparent">
+  <!-- d-flex flex-column  -->
+  <!-- <nav class="navbar sticky-top navbar-dark bg-dark"> -->
+  <!--  navbar-expand-lg (this will uncollapse nav at lg break point) -->
+  <!-- this is the original navbar, don't delete yet -->
+  <!--
+  <nav class="navbar py-0 sticky-top navbar-light bg-light shadow-sm">
+    <a class="navbar-brand" href="#">
+      <h4 class="navbar-text my-0 align-middle">Stonehouse Digital</h4>
+    </a>
+    <button class="navbar-toggler px-2 py-0 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav px-4 mb-2 mr-auto">
+        <div class="dropdown-divider mb-3"></div>
+        <a class="nav-item nav-link active" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">About</a>
+        <a class="nav-item nav-link" href="#">Contact</a>
+      </ul>
+    </div>
+  </nav>
+-->
+
+  <nav class="navbar navbar-expand-sm py-0 sticky-top navbar-light bg-light shadow-sm">
+    <a class="navbar-brand" href="#">
+      <h4 class="navbar-text my-0 align-middle">Stonehouse Digital</h4>
+    </a>
+
+    <button class="navbar-toggler px-2 py-0 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- saving progress on navbar -->
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <div class="dropdown-divider"></div>
+      <ul class="nav justify-content-center my-3">
+
+        <a class="text-secondary nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h3 fab fa-linkedin"></i></a>
+        <a class="text-secondary nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h3 fab fa-codepen"></i></a>
+        <a class="text-secondary nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h3 fab fa-github-square"></i></a>
+      </ul>
+    </div>
+
+
+    <!--
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav px-4 mr-auto">
+        <div class="dropdown-divider mb-3"></div>
+        <a class="nav-item nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h4 fab fa-linkedin"></i></a>
+        <a class="nav-item nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h4 fab fa-codepen"></i></a>
+        <a class="nav-item nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h4 fab fa-github-square"></i></a>
+      </ul>
+    </div>
+  -->
+
+
+  <!--
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav px-4 mr-auto border">
+      <div class="dropdown-divider mb-3"></div>
+      <a class="nav-item nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h3 fab fa-linkedin"></i></a>
+      <a class="nav-item nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h3 fab fa-codepen"></i></a>
+      <a class="nav-item nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h3 fab fa-github-square"></i></a>
+    </ul>
+  </div>
+-->
+
+    <!--
+    <div>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-codepen"></i>
+      <i class=""></i>
+      <i class=""></i>
+      <i class=""></i>
+      <i class=""></i>
+    </div>
+  -->
+
+  </nav>
+
+  <!--
+    <div class="jumbotron jumbotron-fluid bg-transparent">
       <div class="container">
         <h1 class="">Mike Stonehouse</h1>
         <p class="lead">Digital Management, UX & Design</p>
@@ -64,6 +127,20 @@
         </p>
       </div>
     </div>
+  -->
+
+  <!-- don't use jumbotron, it has a background color by default -->
+  <div class="container my-5 py-5 text-light">
+    <h1 class="">Mike Stonehouse</h1>
+    <p class="lead">Digital Management, UX & Design</p>
+    <p class="">
+      I started my digital design career 19 years ago, I revelled during the
+      Flash Era, embraced the swing to accessibility and HTML & CSS, shiny web 2.0,
+      HTML5, now the swing to user centric design and the rise of mobile. These days
+      you can find me leading and heading up digital user experience and creative teams,
+      delivering leading edge digital products and solutions.
+    </p>
+  </div>
 
 
 
@@ -72,13 +149,16 @@
 
 
 
+  <!-- start full width container, this is so a background color can be added -->
+  <div class="w-100 bg-primary mb-5 bg-light">
 
 
     <!-- PROJECT CONTAINER #2 -->
-    <div class="container border rounded shadow p-3 my-3">
+    <div class="container rounded shadow p3 my-5 bg-white">
 
       <!-- flex-wrap flex-sm-nowrap -->
-      <div class="d-flex flex-column flex-md-row p-2"> <!-- row including icon and headers -->
+      <div class="d-flex flex-column flex-md-row p-2">
+        <!-- row including icon and headers -->
         <div class="mr-3 mb-1">
           <img src="assets/DDH-calc.png" class="img-fluid" style="height: 100px; width: 100px; min-width: 100px;">
         </div>
@@ -90,12 +170,14 @@
 
 
       <!-- maybe take container out of this div -->
-      <div class="container py-3 px-1 px-sm-3 px-md-5 d-flex flex-column flex-sm-row justify-content-around align-items-center my-1"> <!-- row including two images of the project -->
+      <div class="container py-3 px-1 px-sm-3 px-md-5 d-flex flex-column flex-sm-row justify-content-around align-items-center my-1">
+        <!-- row including two images of the project -->
         <img class="p-2" src="assets/ddh-hip-ultrasound-calc.png" style="width: 90%; max-width: 420px;">
       </div>
 
 
-      <div class="p-2"> <!-- product description -->
+      <div class="p-2">
+        <!-- product description -->
         <p class="">
           All newborns at increased risk for developmental dysplasia of the
           hips (DDH) should be screened for DDH by hip ultrasound at 46 weeks
@@ -118,7 +200,8 @@
 
 
 
-      <div class="p-2"> <!-- list of technologies used -->
+      <div class="p-2">
+        <!-- list of technologies used -->
         <ul class="list-group list-group-horizontal-md">
           <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
             <i class="fab fa-react h2 pr-2 m-0"></i>
@@ -135,7 +218,8 @@
         </ul>
       </div>
 
-      <div class="d-flex flex-column p-2"> <!-- download buttons -->
+      <div class="d-flex flex-column p-2">
+        <!-- download buttons -->
         <a class="my-2 mr-auto" href="https://play.google.com/store" target="_blank">
           <button class="btn btn-secondary"><i class="fab fa-google-play pr-2"></i>Download on Google Play</button>
         </a>
@@ -154,15 +238,13 @@
 
 
 
-
-
-
     <!-- PROJECT CONTAINER #1 -->
     <!-- <div class="container d-flex flex-md-nowrap flex-wrap border rounded p-3 my-3"> -->
-    <div class="container border rounded shadow p-3 my-3">
+    <div class="container rounded shadow p-3 my-3 bg-white">
 
       <!-- flex-wrap flex-sm-nowrap -->
-      <div class="d-flex flex-column flex-md-row p-2"> <!-- row including icon and headers -->
+      <div class="d-flex flex-column flex-md-row p-2">
+        <!-- row including icon and headers -->
         <div class="mr-3 mb-1">
           <img src="assets/ic_launcher.png" class="img-fluid" style="height: 100px; width: 100px; min-width: 100px;">
         </div>
@@ -174,14 +256,18 @@
 
 
       <!-- maybe take container out of this div -->
-      <div class="container py-3 px-1 px-sm-3 px-md-5 d-flex flex-column flex-sm-row justify-content-around align-items-center my-1"> <!-- row including two images of the project -->
+      <div class="container py-3 px-1 px-sm-3 px-md-5 d-flex flex-column flex-sm-row justify-content-around align-items-center my-1">
+        <!-- row including two images of the project -->
         <img class="p-2" src="assets/mc1.png" style="width: 90%; max-width: 380px;">
         <img class="p-2 d-none d-sm-block" src="assets/mc2.png" style="width: 90%; max-width: 380px;">
       </div>
 
 
-      <div class="p-2"> <!-- product description -->
-        <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="p-2">
+        <!-- product description -->
+        <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </div>
 
       <!--
@@ -197,7 +283,8 @@
 
 
 
-      <div class="p-2"> <!-- list of technologies used -->
+      <div class="p-2">
+        <!-- list of technologies used -->
         <ul class="list-group list-group-horizontal-md">
           <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
             <i class="fab fa-react h2 pr-2 m-0"></i>
@@ -214,7 +301,8 @@
         </ul>
       </div>
 
-      <div class="d-flex flex-column p-2"> <!-- download buttons -->
+      <div class="d-flex flex-column p-2">
+        <!-- download buttons -->
         <a class="my-2 mr-auto" href="https://play.google.com/store" target="_blank">
           <button class="btn btn-secondary"><i class="fab fa-google-play pr-2"></i>Download on Google Play</button>
         </a>
@@ -230,23 +318,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="container my-5 border rounded shadow p-4">
+    <!-- TECHNOLOGIES LIST -->
+    <div class="container my-5 rounded shadow p-4 bg-white">
       <ul class="list-group">
         <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
           <i class="fab fa-react h2 pr-2 m-0"></i>
@@ -295,6 +368,30 @@
 
 
 
+    <!-- end full width container -->
+  </div>
+
+
+
+  <!-- begin footer -->
+  <div class="container my-5 py-5 text-light">
+    <h1 class="">Mike Stonehouse</h1>
+    <p class="lead">Digital Management, UX & Design</p>
+    <p class="">
+      I started my digital design career 19 years ago, I revelled during the
+      Flash Era, embraced the swing to accessibility and HTML & CSS, shiny web 2.0,
+      HTML5, now the swing to user centric design and the rise of mobile. These days
+      you can find me leading and heading up digital user experience and creative teams,
+      delivering leading edge digital products and solutions.
+    </p>
+  </div>
+
+
+
+
+
+
+  <!--
     <div class="container my-4 border rounded">
       <p>These are the headings</p>
       <h1>Create interfaces that users just love</h1>
@@ -304,8 +401,9 @@
       <h5>Create interfaces that users just love</h5>
       <h6>Create interfaces that users just love</h6>
     </div>
+    -->
 
-
+  <!--
     <div class="container my-4 border rounded">
       <p>These are the display headings</p>
       <h1 class="display-1">Display 1</h1>
@@ -313,12 +411,14 @@
       <h1 class="display-3">Display 1</h1>
       <h1 class="display-4">Display 1</h1>
     </div>
+  -->
 
-
+  <!--
     <div class="container my-4 border rounded">
       <p>This is the Lead class added to a paragraph</p>
       <p class="lead">This is the Lead class added to a paragraph</p>
     </div>
+  -->
 
 
 
@@ -328,12 +428,13 @@
 
 
 
-    <!-- BEGIN ROW OF CARDS -->
+  <!-- BEGIN ROW OF CARDS -->
+  <!--
     <div class="album py-5">
       <div class="container">
 
         <div class="row">
-          <div class="col-md-4"> <!--  d-flex align-items-stretch -->
+          <div class="col-md-4">
             <div class="card my-3 shadow-sm">
               <img class="card-img-top img-fluid" src="/assets/card1.jpg" alt="Card image cap">
               <div class="card-body">
@@ -369,9 +470,11 @@
 
       </div>
     </div>
+  -->
 
 
-    <!--image hover effect with text-->
+  <!--image hover effect with text-->
+  <!--
     <div class="container my-3">
       <div class="card">
         <div class="image-hover-container">
@@ -382,8 +485,10 @@
         </div>
       </div>
     </div>
+  -->
 
-    <!--image hover effect with button-->
+  <!--image hover effect with button-->
+  <!--
     <div class="container my-3">
       <div class="card">
         <div class="image-hover-container">
@@ -396,115 +501,115 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
-    <div class="container">
-      <div class="card my-4 p-3">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card my-4 p-3">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card my-4 p-3">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card my-4 p-3">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-      </div>
-    </div>
-
-<!--
-    <div class="my-3 mx-auto container border border-danger">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.492833387064!2d-124.93034007327536!3d49.67322637715424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548813a49497f53d%3A0x15ab113bd0101a3!2sIsland%20Affair%20Giftware!5e0!3m2!1sen!2sca!4v1598468581825!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" zoom="3"></iframe>
-    </div>
   -->
 
-<!--
-    <div class="container">
-      <div class=" card mt-3 mb-5 mx-auto p-0 shadow">
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d41311.72281565833!2d-124.92710400000001!3d49.673465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x15ab113bd0101a3!2sIsland%20Affair%20Giftware!5e0!3m2!1sen!2sca!4v1598476166535!5m2!1sen!2sca" width="100%" height="460px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+
+  <!--
+    <div class="container">
+      <div class="card my-4 p-3">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card my-4 p-3">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card my-4 p-3">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card my-4 p-3">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
       </div>
     </div>
   -->
 
 
-<!--
-    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=island%20affair%20giftware%20comox&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">google maps generator</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
--->
 
 
+
+
+
+
+  <!--
 <div class="container mt-3 mb-5 p-0">
   <div class="card shadow rounded p-2 m-3">
     <div id="map" style="height: 400px; width: 100%;">
     </div>
   </div>
 </div>
+-->
 
-<script>
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  var islandAffair = {lat: 49.6734651, lng: -124.9271039};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 13, center: islandAffair});
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var islandAffair = {
+        lat: 49.6734651,
+        lng: -124.9271039
+      };
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+        document.getElementById('map'), {
+          zoom: 13,
+          center: islandAffair
+        });
 
-  //var contentString = 'Island Affair Giftware';
-  //var infowindow = new google.maps.InfoWindow({content: contentString});
+      //var contentString = 'Island Affair Giftware';
+      //var infowindow = new google.maps.InfoWindow({content: contentString});
 
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: islandAffair, map: map, title: 'Island Affair Giftware'});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({
+        position: islandAffair,
+        map: map,
+        title: 'Island Affair Giftware'
+      });
 
-  //marker.addListener('click', function() {infowindow.open(map, marker)});
-}
-    </script>
-    <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIx2PROm6hluSTFMbntwxNCZ0o34YvA-w&callback=initMap">
-    </script>
-
-
-
-
-
-
-
-    <footer class="mt-auto py-3 bg-dark"> <!-- mt-auto -->
-      <div class="container text-center">
-        <span class="text-light">hello footer</span>
-      </div>
-    </footer>
+      //marker.addListener('click', function() {infowindow.open(map, marker)});
+    }
+  </script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIx2PROm6hluSTFMbntwxNCZ0o34YvA-w&callback=initMap">
+  </script>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-<!--
+  <!--
+  <footer class="mt-auto py-3 bg-dark">
+    <div class="container text-center">
+      <span class="text-light">hello footer</span>
+    </div>
+  </footer>
+-->
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <!--
     <script>
       $(".hover-img").hover(function(){
         $(this).css("background-color", "yellow");
@@ -519,5 +624,6 @@ function initMap() {
   -->
 
 
-  </body>
+</body>
+
 </html>

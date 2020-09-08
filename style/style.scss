@@ -9,6 +9,7 @@
 //$headings-font-family: 'Red Hat Display';
 $font-family-base: 'Red Hat Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
+// the below line works to make text responsive but there is no real control
 //$enable-responsive-font-sizes: true;
 
 $theme-colors: (
@@ -38,6 +39,7 @@ $theme-colors: (
 
 
 // make the fonts responsive here, change font size at break points
+// this works with the three imports at the top of the page
 html {
   font-size: 0.9rem;
   /*font-size: 1.2vw;*/
@@ -68,12 +70,28 @@ html {
 }
 
 /* set background image for body */
-/*
-body {
-  background-image: url('../assets/bg2.jpg');
-  border: 2px solid red;
+
+html {
+
 }
-*/
+
+/* should this be attached to the body or the html */
+/* W3 Schools has an example attached to the body so I think this is OK */
+html {
+  /*background-image: url('../assets/bg2.jpg');*/
+  /* just size the image appropriatly and use center center */
+  /*  */
+  background: url('../assets/bg6.jpg') no-repeat center center fixed;
+
+  /* use the below to make sure it covers the whole page */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /*border: 2px solid red;*/
+}
+
 
 /* make div transparent begin */
 /*
