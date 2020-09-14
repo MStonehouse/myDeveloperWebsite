@@ -16,7 +16,6 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- dont forget to add the apple touch icon -->
   <link rel="apple-touch-icon" sizes="57x57" href="#">
 
@@ -69,10 +68,10 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <div class="dropdown-divider"></div>
       <ul class="nav justify-content-center my-3">
-        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="#" target="_blank">
+        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="https://www.linkedin.com/in/mike-stonehouse-4a06871a4/" target="_blank">
           <i class="my-0 py-0 h3 fab fa-linkedin"></i>
         </a>
-        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="#" target="_blank">
+        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="https://codepen.io/Stonehouse" target="_blank">
           <i class="my-0 py-0 h3 fab fa-codepen"></i>
         </a>
         <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="https://github.com/MStonehouse" target="_blank">
@@ -407,15 +406,35 @@
 
   <!-- begin footer -->
   <div class="container my-5 py-5 text-light">
-    <h1 class="">Mike Stonehouse</h1>
-    <p class="lead">Digital Management, UX & Design</p>
-    <p class="">
-      I started my digital design career 19 years ago, I revelled during the
-      Flash Era, embraced the swing to accessibility and HTML & CSS, shiny web 2.0,
-      HTML5, now the swing to user centric design and the rise of mobile. These days
-      you can find me leading and heading up digital user experience and creative teams,
-      delivering leading edge digital products and solutions.
-    </p>
+    <h4 class="text-center">Like what you see, or want to see more?</h4>
+    <div class="container pt-3">
+
+      <!-- make a copy to clipboard with a tooltip on hover -->
+      <a class="text-light" data-toggle="tooltip" data-placement="top" title="Copy email to clipboard" href="mailto:mikestonehouse@protonmail.com" target="_blank">
+        <div class="d-flex justify-content-between py-2 border-bottom border-secondary">
+          <span class="d-flex align-items-center">Send me an email:</span>
+          <i class="d-flex align-items-center h3 my-0 fas fa-envelope"></i>
+        </div>
+      </a>
+
+      <a class="text-light" href="https://codepen.io/Stonehouse" target="_blank">
+        <div class="d-flex justify-content-between py-2 border-bottom border-secondary">
+          <span class="d-flex align-items-center">See what I've been working on:</span>
+          <i class="d-flex align-items-center h3 my-0 fab fa-codepen"></i>
+        </div>
+      </a>
+
+      <a class="text-light" href="https://www.linkedin.com/in/mike-stonehouse-4a06871a4/" target="_blank">
+        <div class="d-flex justify-content-between py-2">
+          <span class="d-flex align-items-center">Check out my LinkedIn:</span>
+          <i class="d-flex align-items-center h3 my-0 fab fa-linkedin"></i>
+        </div>
+      </a>
+
+
+    </div>
+
+
   </div>
 
 
@@ -640,6 +659,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 
   <!--
     <script>

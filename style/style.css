@@ -1,4 +1,18 @@
 @import url(https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap);
+.myTooltip .tooltip > .tooltip-inner {
+  background: yellow;
+  color: #00ff00;
+}
+
+.tooltip.top .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-color: #00ff00;
+  /* black */
+  border-width: 0 5px 5px;
+}
+
 /*
 // this works for editing the font size but it's obviously not the way to go about it.
 @media all and (max-width: 1200px) {
@@ -151,6 +165,7 @@ html {
 /* end on-hover effect styling */
 a {
   outline: 0;
+  text-decoration: none !important;
 }
 
 button {
