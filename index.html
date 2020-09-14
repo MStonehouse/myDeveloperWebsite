@@ -69,10 +69,15 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <div class="dropdown-divider"></div>
       <ul class="nav justify-content-center my-3">
-
-        <a class="text-secondary nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h3 fab fa-linkedin"></i></a>
-        <a class="text-secondary nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h3 fab fa-codepen"></i></a>
-        <a class="text-secondary nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h3 fab fa-github-square"></i></a>
+        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="#" target="_blank">
+          <i class="my-0 py-0 h3 fab fa-linkedin"></i>
+        </a>
+        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="#" target="_blank">
+          <i class="my-0 py-0 h3 fab fa-codepen"></i>
+        </a>
+        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="https://github.com/MStonehouse" target="_blank">
+          <i class="my-0 py-0 h3 fab fa-github-square"></i>
+        </a>
       </ul>
     </div>
 
@@ -89,7 +94,7 @@
   -->
 
 
-  <!--
+    <!--
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav px-4 mr-auto border">
       <div class="dropdown-divider mb-3"></div>
@@ -150,11 +155,110 @@
 
 
   <!-- start full width container, this is so a background color can be added -->
-  <div class="w-100 bg-primary mb-5 bg-light">
+  <div class="w-100 mb-5 bg-light">
+
+
+
+
+
+
+
+
+
+
+    <!-- PROJECT CONTAINER #1 -->
+    <!-- <div class="container d-flex flex-md-nowrap flex-wrap border rounded p-3 my-3"> -->
+    <div class="container rounded shadow p-3 my-5 bg-white">
+
+      <!-- flex-wrap flex-sm-nowrap -->
+      <div class="d-flex flex-column flex-md-row p-2">
+        <!-- row including icon and headers -->
+        <div class="mr-3 mb-1">
+          <img src="assets/ic_launcher.png" class="img-fluid" style="height: 100px; width: 100px; min-width: 100px;">
+        </div>
+        <div class="d-flex flex-column justify-content-around">
+          <h1 class="font-weight-light">Machinist Companion</h1>
+          <h3 class="lead">An Intuitive and Easy to Use Machinist App</h3>
+        </div>
+      </div>
+
+
+      <!-- maybe take container out of this div -->
+      <div class="container py-3 px-1 px-sm-3 px-md-5 d-flex flex-column flex-sm-row justify-content-around align-items-center my-1">
+        <!-- row including two images of the project -->
+        <img class="p-2" src="assets/mc1.png" style="width: 90%; max-width: 380px;">
+        <img class="p-2 d-none d-sm-block" src="assets/mc2.png" style="width: 90%; max-width: 380px;">
+      </div>
+
+
+      <div class="p-2">
+        <!-- product description -->
+        <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+
+      <!--
+      <div>
+        <a class="d-block" href="https://play.google.com/store" target="_blank">
+          <span class="lead">Download on Google Play</span>
+        </a>
+        <a class="d-block" href="https://www.apple.com/ios/app-store/" target="_blank">
+          <span class="lead">Download on Apple App Store</span>
+        </a>
+      </div>
+    -->
+
+
+
+      <div class="p-2">
+        <!-- list of technologies used -->
+        <ul class="list-group list-group-horizontal-md">
+          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
+            <i class="fab fa-react h2 pr-2 m-0"></i>
+            <span class="">React Native</span>
+          </li>
+          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
+            <i class="fab fa-js-square h2 pr-2 m-0"></i>
+            <span class="">Javascript</span>
+          </li>
+          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
+            <i class="fab fa-node-js h2 pr-2 m-0"></i>
+            <span class="">Node JS</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-flex flex-column p-2">
+        <!-- download buttons -->
+        <a class="my-2 mr-auto" href="https://play.google.com/store" target="_blank">
+          <button class="btn btn-dark"><i class="fab fa-google-play pr-2"></i>Download on Google Play</button>
+        </a>
+        <a class="my-2 mr-auto" href="https://www.apple.com/ios/app-store/" target="_blank">
+          <button class="btn btn-secondary"><i class="fab fa-app-store-ios pr-2"></i>Download on Apple App Store</button>
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- PROJECT CONTAINER #2 -->
-    <div class="container rounded shadow p3 my-5 bg-white">
+    <div class="container rounded shadow p-3 my-5 bg-white">
 
       <!-- flex-wrap flex-sm-nowrap -->
       <div class="d-flex flex-column flex-md-row p-2">
@@ -221,7 +325,7 @@
       <div class="d-flex flex-column p-2">
         <!-- download buttons -->
         <a class="my-2 mr-auto" href="https://play.google.com/store" target="_blank">
-          <button class="btn btn-secondary"><i class="fab fa-google-play pr-2"></i>Download on Google Play</button>
+          <button class="btn btn-info"><i class="fab fa-google-play pr-2"></i>Download on Google Play</button>
         </a>
         <a class="my-2 mr-auto" href="https://www.apple.com/ios/app-store/" target="_blank">
           <button class="btn btn-secondary"><i class="fab fa-app-store-ios pr-2"></i>Download on Apple App Store</button>
@@ -238,79 +342,7 @@
 
 
 
-    <!-- PROJECT CONTAINER #1 -->
-    <!-- <div class="container d-flex flex-md-nowrap flex-wrap border rounded p-3 my-3"> -->
-    <div class="container rounded shadow p-3 my-3 bg-white">
 
-      <!-- flex-wrap flex-sm-nowrap -->
-      <div class="d-flex flex-column flex-md-row p-2">
-        <!-- row including icon and headers -->
-        <div class="mr-3 mb-1">
-          <img src="assets/ic_launcher.png" class="img-fluid" style="height: 100px; width: 100px; min-width: 100px;">
-        </div>
-        <div class="d-flex flex-column justify-content-around">
-          <h1 class="font-weight-light">Machinist Companion</h1>
-          <h3 class="lead">An Intuitive and Easy to Use Machinist App</h3>
-        </div>
-      </div>
-
-
-      <!-- maybe take container out of this div -->
-      <div class="container py-3 px-1 px-sm-3 px-md-5 d-flex flex-column flex-sm-row justify-content-around align-items-center my-1">
-        <!-- row including two images of the project -->
-        <img class="p-2" src="assets/mc1.png" style="width: 90%; max-width: 380px;">
-        <img class="p-2 d-none d-sm-block" src="assets/mc2.png" style="width: 90%; max-width: 380px;">
-      </div>
-
-
-      <div class="p-2">
-        <!-- product description -->
-        <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-          specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-
-      <!--
-      <div>
-        <a class="d-block" href="https://play.google.com/store" target="_blank">
-          <span class="lead">Download on Google Play</span>
-        </a>
-        <a class="d-block" href="https://www.apple.com/ios/app-store/" target="_blank">
-          <span class="lead">Download on Apple App Store</span>
-        </a>
-      </div>
-    -->
-
-
-
-      <div class="p-2">
-        <!-- list of technologies used -->
-        <ul class="list-group list-group-horizontal-md">
-          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-            <i class="fab fa-react h2 pr-2 m-0"></i>
-            <span class="">React Native</span>
-          </li>
-          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-            <i class="fab fa-js-square h2 pr-2 m-0"></i>
-            <span class="">Javascript</span>
-          </li>
-          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-            <i class="fab fa-node-js h2 pr-2 m-0"></i>
-            <span class="">Node JS</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="d-flex flex-column p-2">
-        <!-- download buttons -->
-        <a class="my-2 mr-auto" href="https://play.google.com/store" target="_blank">
-          <button class="btn btn-secondary"><i class="fab fa-google-play pr-2"></i>Download on Google Play</button>
-        </a>
-        <a class="my-2 mr-auto" href="https://www.apple.com/ios/app-store/" target="_blank">
-          <button class="btn btn-secondary"><i class="fab fa-app-store-ios pr-2"></i>Download on Apple App Store</button>
-        </a>
-      </div>
-    </div>
 
 
 
