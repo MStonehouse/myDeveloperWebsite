@@ -68,52 +68,20 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <div class="dropdown-divider"></div>
       <ul class="nav justify-content-center my-3">
-        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="https://www.linkedin.com/in/mike-stonehouse-4a06871a4/" target="_blank">
-          <i class="my-0 py-0 h3 fab fa-linkedin"></i>
-        </a>
-        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="https://codepen.io/Stonehouse" target="_blank">
-          <i class="my-0 py-0 h3 fab fa-codepen"></i>
+        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" id="copy-email-nav" onclick="copyToClipboard(this.id)" data-onclicktext="Copied to clipboard" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Copy email to clipboard">
+          <i class="my-0 py-0 h3 fas fa-envelope"></i>
         </a>
         <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="https://github.com/MStonehouse" target="_blank">
           <i class="my-0 py-0 h3 fab fa-github-square"></i>
         </a>
+        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="https://codepen.io/Stonehouse" target="_blank">
+          <i class="my-0 py-0 h3 fab fa-codepen"></i>
+        </a>
+        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="https://www.linkedin.com/in/mike-stonehouse-4a06871a4/" target="_blank">
+          <i class="my-0 py-0 h3 fab fa-linkedin"></i>
+        </a>
       </ul>
     </div>
-
-
-    <!--
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav px-4 mr-auto">
-        <div class="dropdown-divider mb-3"></div>
-        <a class="nav-item nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h4 fab fa-linkedin"></i></a>
-        <a class="nav-item nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h4 fab fa-codepen"></i></a>
-        <a class="nav-item nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h4 fab fa-github-square"></i></a>
-      </ul>
-    </div>
-  -->
-
-
-    <!--
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav px-4 mr-auto border">
-      <div class="dropdown-divider mb-3"></div>
-      <a class="nav-item nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h3 fab fa-linkedin"></i></a>
-      <a class="nav-item nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h3 fab fa-codepen"></i></a>
-      <a class="nav-item nav-link py-0 d-flex align-items-center" href="#"><i class="my-0 py-0 h3 fab fa-github-square"></i></a>
-    </ul>
-  </div>
--->
-
-    <!--
-    <div>
-      <i class="fab fa-linkedin"></i>
-      <i class="fab fa-codepen"></i>
-      <i class=""></i>
-      <i class=""></i>
-      <i class=""></i>
-      <i class=""></i>
-    </div>
-  -->
 
   </nav>
 
@@ -396,17 +364,6 @@
 
 
 
-
-
-    <div class="py-4 border border-danger pl-5">
-      <button  type="button" data-toggle="tooltip" data-placement="top" title="tooltip" class="my-3 btn btn-primary mx-auto">Sample Button</button>
-      <button  id="button1" onclick="copyToClipboard(this.id)" type="button" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Copy email to clipboard" class="my-3 btn btn-primary mx-auto">Sample Button</button>
-
-      <button  id="button2" onclick="copyToClipboard()" type="button" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Another button" class="my-3 btn btn-primary mx-auto">Sample Button</button>
-
-    </div>
-
-
     <!-- end full width container -->
   </div>
 
@@ -418,10 +375,17 @@
     <div class="container pt-3">
 
       <!-- make a copy to clipboard with a tooltip on hover -->
-      <a class="text-light" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Copy email to clipboard" href="mailto:mikestonehouse@protonmail.com" target="_blank">
+      <a class="text-light" id="copy-email-footer" onclick="copyToClipboard(this.id)" data-onclicktext="Copied to clipboard" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Copy email to clipboard">
         <div class="d-flex justify-content-between py-2 border-bottom border-secondary">
           <span class="d-flex align-items-center">Send me an email:</span>
           <i class="d-flex align-items-center h3 my-0 fas fa-envelope"></i>
+        </div>
+      </a>
+
+      <a class="text-light" href="https://github.com/MStonehouse" target="_blank">
+        <div class="d-flex justify-content-between py-2 border-bottom border-secondary">
+          <span class="d-flex align-items-center">Check out my GitHub:</span>
+          <i class="d-flex align-items-center h3 my-0 fab fa-github-square"></i>
         </div>
       </a>
 
@@ -438,6 +402,8 @@
           <i class="d-flex align-items-center h3 my-0 fab fa-linkedin"></i>
         </div>
       </a>
+
+
 
 
     </div>
@@ -468,17 +434,56 @@
 
   <script>
 
-
+    // initialize tooltips
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
 
+    // initialize popovers
     $(function () {
       $('[data-toggle="popover"]').popover();
     })
 
 
 
+
+  function copyToClipboard(clickedId) {
+    /*
+    * function to copy data to clipboard using bootstrap and jQuery
+    *
+    * for this function to work add an id to the popover
+    * pass the id into the onclick function like so onclick="copyToClipboard(this.id)"
+    * add the data-onclicktext"" data attribute to pass in the data you would like to be displayed in the popover on success
+    *
+    */
+    let jqueryId = '#' + clickedId;
+    let clipboardData = 'mikestonehouse@protonmail.com'; // data to copy to clipboard
+    let originalText = $(jqueryId).attr('data-content');
+    let textForClick = $(jqueryId).attr('data-onclicktext');
+    navigator.clipboard.writeText(clipboardData).then(function() {
+      // success
+      console.log('data copied to clipboard');
+      $(jqueryId).popover('hide');
+      $(jqueryId).attr('data-content', textForClick);
+      $(jqueryId).popover('show');
+      setTimeout(function() {
+        $(jqueryId).popover('hide');
+        $(jqueryId).attr('data-content', originalText);
+      }, 1500);
+    }, function() {
+      //failure
+      console.log('copy to clipboard failed');
+      window.location.href = 'mailto:' + clipboardData;
+    })
+  }
+
+
+
+
+
+
+
+/*
     // copy email to clipboard onclick
     // include id of button you want to target
     function copyToClipboard(clickedId) {
@@ -509,9 +514,9 @@
         window.location.href = 'mailto:' + email;
       });
     }
+*/
 
-
-    console.log(window.navigator);
+    //console.log(window.navigator);
 
   </script>
 
