@@ -398,6 +398,14 @@
 
 
 
+    <div class="py-4 border border-danger pl-5">
+      <button  type="button" data-toggle="tooltip" data-placement="top" title="tooltip" class="my-3 btn btn-primary mx-auto">Sample Button</button>
+      <button  id="button1" onclick="copyToClipboard(this.id)" type="button" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Copy email to clipboard" class="my-3 btn btn-primary mx-auto">Sample Button</button>
+
+      <button  id="button2" onclick="copyToClipboard()" type="button" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="top" data-content="Another button" class="my-3 btn btn-primary mx-auto">Sample Button</button>
+
+    </div>
+
 
     <!-- end full width container -->
   </div>
@@ -410,7 +418,7 @@
     <div class="container pt-3">
 
       <!-- make a copy to clipboard with a tooltip on hover -->
-      <a class="text-light" data-toggle="tooltip" data-placement="top" title="Copy email to clipboard" href="mailto:mikestonehouse@protonmail.com" target="_blank">
+      <a class="text-light" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Copy email to clipboard" href="mailto:mikestonehouse@protonmail.com" target="_blank">
         <div class="d-flex justify-content-between py-2 border-bottom border-secondary">
           <span class="d-flex align-items-center">Send me an email:</span>
           <i class="d-flex align-items-center h3 my-0 fas fa-envelope"></i>
@@ -443,208 +451,6 @@
 
 
   <!--
-    <div class="container my-4 border rounded">
-      <p>These are the headings</p>
-      <h1>Create interfaces that users just love</h1>
-      <h2>Create interfaces that users just love</h2>
-      <h3>Create interfaces that users just love</h3>
-      <h4>Create interfaces that users just love</h4>
-      <h5>Create interfaces that users just love</h5>
-      <h6>Create interfaces that users just love</h6>
-    </div>
-    -->
-
-  <!--
-    <div class="container my-4 border rounded">
-      <p>These are the display headings</p>
-      <h1 class="display-1">Display 1</h1>
-      <h1 class="display-2">Display 1</h1>
-      <h1 class="display-3">Display 1</h1>
-      <h1 class="display-4">Display 1</h1>
-    </div>
-  -->
-
-  <!--
-    <div class="container my-4 border rounded">
-      <p>This is the Lead class added to a paragraph</p>
-      <p class="lead">This is the Lead class added to a paragraph</p>
-    </div>
-  -->
-
-
-
-
-
-
-
-
-
-  <!-- BEGIN ROW OF CARDS -->
-  <!--
-    <div class="album py-5">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card my-3 shadow-sm">
-              <img class="card-img-top img-fluid" src="/assets/card1.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card my-3 shadow-sm">
-              <img class="card-img-top" src="/assets/card2.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card my-3 shadow-sm">
-              <img class="card-img-top" src="/assets/card3.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  -->
-
-
-  <!--image hover effect with text-->
-  <!--
-    <div class="container my-3">
-      <div class="card">
-        <div class="image-hover-container">
-          <img src="/assets/card1.jpg" class="img-fluid hover-img" alt="sample image">
-          <div class="hover-text">
-            <p>Overlay Text</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  -->
-
-  <!--image hover effect with button-->
-  <!--
-    <div class="container my-3">
-      <div class="card">
-        <div class="image-hover-container">
-          <img src="/assets/card1.jpg" class="img-fluid w-100 h-100 hover-img" alt="sample image">
-          <div class="hover-text">
-            <a href="https://google.com" target="_blank">
-              <button type="button" class="btn btn-primary">This is a Button</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  -->
-
-
-
-
-
-  <!--
-    <div class="container">
-      <div class="card my-4 p-3">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card my-4 p-3">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card my-4 p-3">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card my-4 p-3">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-      </div>
-    </div>
-  -->
-
-
-
-
-
-
-
-
-  <!--
-<div class="container mt-3 mb-5 p-0">
-  <div class="card shadow rounded p-2 m-3">
-    <div id="map" style="height: 400px; width: 100%;">
-    </div>
-  </div>
-</div>
--->
-
-  <script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of Uluru
-      var islandAffair = {
-        lat: 49.6734651,
-        lng: -124.9271039
-      };
-      // The map, centered at Uluru
-      var map = new google.maps.Map(
-        document.getElementById('map'), {
-          zoom: 13,
-          center: islandAffair
-        });
-
-      //var contentString = 'Island Affair Giftware';
-      //var infowindow = new google.maps.InfoWindow({content: contentString});
-
-      // The marker, positioned at Uluru
-      var marker = new google.maps.Marker({
-        position: islandAffair,
-        map: map,
-        title: 'Island Affair Giftware'
-      });
-
-      //marker.addListener('click', function() {infowindow.open(map, marker)});
-    }
-  </script>
-  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIx2PROm6hluSTFMbntwxNCZ0o34YvA-w&callback=initMap">
-  </script>
-
-
-
-
-
-
-  <!--
   <footer class="mt-auto py-3 bg-dark">
     <div class="container text-center">
       <span class="text-light">hello footer</span>
@@ -661,24 +467,54 @@
 
 
   <script>
+
+
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
+
+    $(function () {
+      $('[data-toggle="popover"]').popover();
+    })
+
+
+
+    // copy email to clipboard onclick
+    // include id of button you want to target
+    function copyToClipboard(clickedId) {
+      let email = 'mikestonehouse@protonmail.com';
+      let jqueryId = '#' + clickedId;
+      //console.log('this comes out as: ' + this)
+
+      console.log('the passed in ID is: ' + clickedId)
+
+      navigator.clipboard.writeText(email).then(function(e) {
+        console.log('copy email to clipboard was successful');
+        console.log(e);
+        console.log('mailto:' + email);
+
+        //$(jqueryId).attr("data-trigger", "click");
+
+        $(jqueryId).popover('hide');
+        $(jqueryId).attr("data-content", "Copied to clipboard");
+        $(jqueryId).popover('show');
+        setTimeout(function() {
+          //$(jqueryId).popover('hide');
+          $(jqueryId).attr("data-content", "Copy email to clipboard");
+        }, 1000);
+      }, function() {
+        console.log('copy email to clipboard failed');
+        // if copying email to clipboard failed open mailto:
+        console.log('mailto:' + email)
+        window.location.href = 'mailto:' + email;
+      });
+    }
+
+
+    console.log(window.navigator);
+
   </script>
 
-  <!--
-    <script>
-      $(".hover-img").hover(function(){
-        $(this).css("background-color", "yellow");
-        }, function(){
-        $(this).css("background-color", "pink");
-      });
-
-      $(function() {
-        $(".hover-img").hoverZoom();
-      })
-    </script>
-  -->
 
 
 </body>

@@ -16,21 +16,40 @@ $theme-colors: (
   "nav": #00ff00
 );
 
+.tooltip.top .tooltip-inner {
+  background-color: #00ff00 !important;
+}
+
+.tooltip.primary .tooltip-inner          { background-color:    #337ab7; }
+.tooltip.primary.top > .tooltip-arrow    { border-top-color:    #337ab7; }
+.tooltip.primary.right > .tooltip-arrow  { border-right-color:  #337ab7; }
+.tooltip.primary.bottom > .tooltip-arrow { border-bottom-color: #337ab7; }
+.tooltip.primary.left > .tooltip-arrow   { border-left-color:   #337ab7; }
 
 
-
+/*
+// failed attempts to style tooltip
 .myTooltip .tooltip > .tooltip-inner{
  background:yellow;
   color:#00ff00;
+}
+
+.tooltip.top {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-color: #00ff00;
+  border-width: 0 5px 5px;
 }
 
 .tooltip.top .tooltip-arrow {
   top: 0;
   left: 50%;
   margin-left: -5px;
-  border-bottom-color: #00ff00; /* black */
+  border-bottom-color: #00ff00;
   border-width: 0 5px 5px;
 }
+*/
 
 /*
 // this works for editing the font size but it's obviously not the way to go about it.
