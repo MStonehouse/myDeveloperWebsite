@@ -38,22 +38,25 @@
       <h4 class="navbar-text my-0 align-middle">MS</h4>
     </a>
     <button class="navbar-toggler px-2 py-0 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!--
       <span class="navbar-toggler-icon"></span>
+    -->
+      <i class="fas fa-bars text-dark"></i>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <div class="dropdown-divider"></div>
       <ul class="nav justify-content-center my-3">
-        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" id="copy-email-nav" onclick="copyToClipboard(this.id)" data-onclicktext="Copied to clipboard" data-toggle="popover" data-trigger="hover" data-placement="top"
+        <a class="text-dark nav-item nav-link py-0 d-flex align-items-center" id="copy-email-nav" onclick="copyToClipboard(this.id)" data-container="body" data-onclicktext="Copied to clipboard" data-toggle="popover" data-trigger="hover" data-placement="top"
           data-content="Copy email to clipboard">
           <i class="my-0 py-0 h3 fas fa-envelope"></i>
         </a>
-        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="https://github.com/MStonehouse" target="_blank">
+        <a class="text-dark nav-item nav-link py-0 d-flex align-items-center" href="https://github.com/MStonehouse" target="_blank">
           <i class="my-0 py-0 h3 fab fa-github-square"></i>
         </a>
-        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="https://www.linkedin.com/in/mike-stonehouse-4a06871a4/" target="_blank">
+        <a class="text-dark nav-item nav-link py-0 d-flex align-items-center" href="https://www.linkedin.com/in/mike-stonehouse-4a06871a4/" target="_blank">
           <i class="my-0 py-0 h3 fab fa-linkedin"></i>
         </a>
-        <a class="text-secondary nav-item nav-link py-0 d-flex align-items-center" href="https://codepen.io/Stonehouse" target="_blank">
+        <a class="text-dark nav-item nav-link py-0 d-flex align-items-center" href="https://codepen.io/Stonehouse" target="_blank">
           <i class="my-0 py-0 h3 fab fa-codepen"></i>
         </a>
       </ul>
@@ -65,7 +68,7 @@
   <!-- don't use jumbotron, it has a background color by default -->
   <div class="container my-5 py-5 text-light">
     <h1 class="">Mike Stonehouse</h1>
-    <p class="lead">Digital Management, UX & Design</p>
+    <p class="lead">I Design and Build Digital Products</p>
     <p class="">
       I started my digital design career 19 years ago, I revelled during the
       Flash Era, embraced the swing to accessibility and HTML & CSS, shiny web 2.0,
@@ -113,10 +116,11 @@
 
       <div class="p-2">
         <p class="">
-          Machinist Companion is an easy to use machinist reference and calculator
-          designed to help CNC and manual machinists make parts faster. The interface
-          never covers the result and all calculations auto complete. No longer
-          will the number pad get in the way of the answer.
+          Machinist companion is an easy to use machinist reference and
+          calculator designed to help CNC and manual machinists make parts
+          faster. All calculations auto complete so no outdated data is ever
+          seen by the user and the interface has been designed to work on the
+          broadest range of mobile devices.
         </p>
       </div>
 
@@ -141,6 +145,17 @@
         </ul>
       </div>
 
+      <!-- this is a new set of buttons that collapses @ lg break point -->
+      <div class="d-flex flex-column p-2">
+        <a class="my-2 mr-lg-auto" href="https://play.google.com/store/apps/details?id=com.stonehousedigital.machinistcompanionlite" target="_blank">
+          <button class="btn btn-secondary btn-block"><i class="fab fa-google-play pr-2"></i>Download on Google Play</button>
+        </a>
+        <a class="my-2 mr-lg-auto" href="https://apps.apple.com/us/app/machinist-companion/id1516321178?ls=1" target="_blank">
+          <button class="btn btn-secondary btn-block"><i class="fab fa-app-store-ios pr-2"></i>Download on Apple App Store</button>
+        </a>
+      </div>
+
+      <!--
       <div class="d-flex flex-column p-2">
         <a class="my-2 mr-auto" href="https://play.google.com/store/apps/details?id=com.stonehousedigital.machinistcompanionlite" target="_blank">
           <button class="btn btn-secondary"><i class="fab fa-google-play pr-2"></i>Download on Google Play</button>
@@ -148,8 +163,10 @@
         <a class="my-2 mr-auto" href="https://apps.apple.com/us/app/machinist-companion/id1516321178?ls=1" target="_blank">
           <button class="btn btn-secondary"><i class="fab fa-app-store-ios pr-2"></i>Download on Apple App Store</button>
         </a>
-
       </div>
+    -->
+
+
     </div>
     <!-- PROJECT CONTAINER END -->
 
