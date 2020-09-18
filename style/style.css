@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap);
+#mics-in-button {
+  height: 28px;
+  width: auto;
+}
+
 /*
 // failed attempts to style tooltip
 .myTooltip .tooltip > .tooltip-inner{
@@ -78,7 +83,7 @@ html {
   background: url('../assets/bg7.jpg') no-repeat center center fixed;
 */
   /* don't forget to set background color as a backup if image fails to load */
-  background-image: linear-gradient(to top, rgba(35, 35, 35, 0.6), rgba(35, 35, 35, 0.6)), url("../assets/bg8.jpg");
+  background-image: linear-gradient(to top, rgba(35, 35, 35, 0.6), rgba(35, 35, 35, 0.6)), url("../assets/bg12.jpg");
   background-size: cover;
   /* will cover in both directions */
   background-position: center;

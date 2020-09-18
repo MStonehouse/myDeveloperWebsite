@@ -34,7 +34,7 @@
 
   <!-- BEGIN NAVBAR -->
   <nav class="navbar navbar-expand-sm py-0 sticky-top navbar-light bg-light shadow-sm">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand">
       <h4 class="navbar-text my-0 align-middle">MS</h4>
     </a>
     <button class="navbar-toggler px-2 py-0 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,8 +46,8 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <div class="dropdown-divider"></div>
       <ul class="nav justify-content-center my-3">
-        <a class="text-dark nav-item nav-link py-0 d-flex align-items-center" id="copy-email-nav" onclick="copyToClipboard(this.id)" data-container="body" data-onclicktext="Email copied to clipboard" data-toggle="popover" data-trigger="hover" data-placement="top"
-          data-content="Copy email to clipboard">
+        <a class="text-dark nav-item nav-link py-0 d-flex align-items-center" id="copy-email-nav" onclick="copyToClipboard(this.id)" data-container="body" data-onclicktext="Email copied to clipboard" data-toggle="popover" data-trigger="hover"
+          data-placement="top" data-content="Copy email to clipboard">
           <i class="my-0 py-0 h3 fas fa-envelope"></i>
         </a>
         <a class="text-dark nav-item nav-link py-0 d-flex align-items-center" href="https://github.com/MStonehouse" target="_blank">
@@ -85,14 +85,6 @@
 
   <!-- start full width container, this is so a background color can be added -->
   <div class="w-100 mb-5 bg-light">
-
-
-
-
-
-
-
-
 
 
     <!-- PROJECT CONTAINER #1 -->
@@ -145,11 +137,14 @@
 
       <!-- this is a new set of buttons that collapses @ lg break point -->
       <div class="d-flex flex-column p-2">
+        <a class="my-2 mr-lg-auto" href="https://machinistcompanion.com" target="_blank">
+          <button class="btn btn-secondary btn-block"><img src="assets/mics.png" class="pr-2" id="mics-in-button">Check out the webnsite</button>
+        </a>
         <a class="my-2 mr-lg-auto" href="https://play.google.com/store/apps/details?id=com.stonehousedigital.machinistcompanionlite" target="_blank">
-          <button class="btn btn-secondary btn-block"><i class="fab fa-google-play pr-2"></i>Download on Google Play</button>
+          <button class="btn btn-secondary btn-block"><i class="fab fa-google-play h5 my-0 pr-2"></i>Download on Google Play</button>
         </a>
         <a class="my-2 mr-lg-auto" href="https://apps.apple.com/us/app/machinist-companion/id1516321178?ls=1" target="_blank">
-          <button class="btn btn-secondary btn-block"><i class="fab fa-app-store-ios pr-2"></i>Download on Apple App Store</button>
+          <button class="btn btn-secondary btn-block"><i class="fab fa-app-store-ios h5 my-0 pr-2"></i>Download on Apple App Store</button>
         </a>
       </div>
 
@@ -211,6 +206,80 @@
 
 
 
+  <!--
+    <div class="container my-5 rounded shadow p-4 bg-white">
+      <ul class="list-group list-group-horizontal-lg">
+        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
+          <span class="">Technologies used</span>
+        </li>
+      </ul>
+      <ul class="list-group list-group-horizontal-lg">
+        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
+          <span class="">Technologies used</span>
+        </li>
+        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
+          <i class="fab fa-react h2 pr-2 m-0"></i>
+          <span class="">Electron</span>
+        </li>
+        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
+          <i class="fab fa-js-square h2 pr-2 m-0"></i>
+          <span class="">Javascript</span>
+        </li>
+        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
+          <i class="fab fa-node-js h2 pr-2 m-0"></i>
+          <span class="">Node JS</span>
+        </li>
+        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
+          <i class="fab fa-bootstrap h2 pr-2 m-0"></i>
+          <span class="">Bootstrap</span>
+        </li>
+      </ul>
+    </div>
+  -->
+
+
+<!--
+    <div class="container my-4">
+
+      <div class="list-group">
+
+        <div class="list-group-item d-flex w-100 justify-content-between">
+          <h5 class="mb-1">heading</h5>
+        </div>
+
+
+
+        <div class="list-group-item d-flex justify-content-between">
+          <h5 class="mb-1">item</h5>
+        </div>
+
+        <div class="list-group-item d-flex justify-content-between">
+          <h5 class="mb-1">item</h5>
+        </div>
+
+        <div class="list-group-item d-flex justify-content-between">
+          <h5 class="mb-1">item</h5>
+        </div>
+
+      </div>
+    </div>
+-->
+
+<!--
+    <div class="container py-5">
+      <div class="list-group">
+        <div class="list-group-item d-flex justify-content-between">
+          <p class="my-0">heading</p>
+        </div>
+        <div class="list-group-item d-flex justify-content-between">
+          <p class="my-0">heading</p>
+        </div>
+        <div class="list-group-item d-flex justify-content-between">
+          <p class="my-0">heading</p>
+        </div>
+      </div>
+    </div>
+-->
 
 
 
@@ -274,7 +343,8 @@
     <div class="container pt-3">
 
       <!-- onclick this element will copy email to clipboard -->
-      <a class="text-light" id="copy-email-footer" onclick="copyToClipboard(this.id)" data-container="body" data-onclicktext="Email copied to clipboard" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Copy email to clipboard">
+      <a class="text-light" id="copy-email-footer" onclick="copyToClipboard(this.id)" data-container="body" data-onclicktext="Email copied to clipboard" data-toggle="popover" data-trigger="hover" data-placement="top"
+        data-content="Copy email to clipboard">
         <div class="d-flex justify-content-between py-2 border-bottom border-secondary">
           <span class="d-flex align-items-center">Send me an email:</span>
           <i class="d-flex align-items-center h3 my-0 fas fa-envelope"></i>
@@ -341,20 +411,20 @@
       $('[data-toggle="popover"]').popover();
     })
 
-/*
-    console.log(String.fromCharCode(72, 69, 76, 76, 79));
-    console.log(String.fromCharCode(109, 105, 107, 101, 115, 116, 111, 110, 101, 104, 111, 117, 115, 101, 64, 112, 114, 111, 116, 111, 110, 109, 97, 105, 108, 46, 99, 111, 109));
+    /*
+        console.log(String.fromCharCode(72, 69, 76, 76, 79));
+        console.log(String.fromCharCode(109, 105, 107, 101, 115, 116, 111, 110, 101, 104, 111, 117, 115, 101, 64, 112, 114, 111, 116, 111, 110, 109, 97, 105, 108, 46, 99, 111, 109));
 
-    let g4 = String.fromCharCode(49, 48, 57, 32, 49, 48, 53, 32, 49, 48, 55, 32, 49, 48, 49, 32, 49, 49, 53, 32, 49, 49, 54, 32, 49, 49, 49, 32, 49, 49, 48, 32, 49, 48, 49, 32, 49, 48, 52, 32, 49, 49, 49, 32, 49, 49, 55, 32, 49, 49, 53, 32, 49, 48, 49, 32, 54, 52, 32, 49, 49, 50, 32, 49, 49, 52, 32, 49, 49, 49, 32, 49, 49, 54, 32, 49, 49, 49, 32, 49, 49, 48, 32, 49, 48, 57, 32, 57, 55, 32, 49, 48, 53, 32, 49, 48, 56, 32, 52, 54, 32, 57, 57, 32, 49, 49, 49, 32, 49, 48, 57, 32).trim();
+        let g4 = String.fromCharCode(49, 48, 57, 32, 49, 48, 53, 32, 49, 48, 55, 32, 49, 48, 49, 32, 49, 49, 53, 32, 49, 49, 54, 32, 49, 49, 49, 32, 49, 49, 48, 32, 49, 48, 49, 32, 49, 48, 52, 32, 49, 49, 49, 32, 49, 49, 55, 32, 49, 49, 53, 32, 49, 48, 49, 32, 54, 52, 32, 49, 49, 50, 32, 49, 49, 52, 32, 49, 49, 49, 32, 49, 49, 54, 32, 49, 49, 49, 32, 49, 49, 48, 32, 49, 48, 57, 32, 57, 55, 32, 49, 48, 53, 32, 49, 48, 56, 32, 52, 54, 32, 57, 57, 32, 49, 49, 49, 32, 49, 48, 57, 32).trim();
 
-    console.log(typeof g4);
-    let g5 = g4.replace(/\s/g, ', ');
-    console.log(typeof g5);
-    console.log(g5);
-    console.log('g5 is: ' + g5);
-    let g6 = String.fromCharCode(g5);
-    console.log(g6);
-    */
+        console.log(typeof g4);
+        let g5 = g4.replace(/\s/g, ', ');
+        console.log(typeof g5);
+        console.log(g5);
+        console.log('g5 is: ' + g5);
+        let g6 = String.fromCharCode(g5);
+        console.log(g6);
+        */
 
     function copyToClipboard(clickedId) {
       /*
