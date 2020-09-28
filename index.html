@@ -1,112 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" class="min-vh-100 bg-dark">
+<html>
 
 <head>
   <title>Mike Stonehouse | Web Developer</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-  <!-- description meta -->
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
-  <meta name="Copyright" content="Copyright Mike Stonehouse. All Rights Reserved.">
-
-  <!-- Bootstrap -->
   <link rel="stylesheet" href="style/style.css">
-  <!-- dont forget to add the apple touch icon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="#">
 
-  <!-- preload image -->
-  <link rel="preload" as="image" href="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/b004ee397a.js" crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
 
 
 </head>
 
-<body class="min-vh-100 d-flex flex-column bg-transparent">
+<body>
 
-
-  <!-- BEGIN NAVBAR -->
-  <nav class="navbar navbar-expand-sm py-0 sticky-top navbar-light bg-light shadow-sm">
-    <a class="navbar-brand">
-      <h4 class="navbar-text my-0 align-middle">MS</h4>
-    </a>
-    <button class="navbar-toggler px-2 py-0 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <!--
-      <span class="navbar-toggler-icon"></span>
-    -->
-      <i class="fas fa-bars text-dark"></i>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <div class="dropdown-divider"></div>
-      <ul class="nav justify-content-center my-3">
-        <a class="text-dark nav-item nav-link py-0 d-flex align-items-center" id="copy-email-nav" onclick="copyToClipboard(this.id)" data-container="body" data-onclicktext="Email copied to clipboard" data-toggle="popover" data-trigger="hover"
-          data-placement="top" data-content="Copy email to clipboard">
-          <i class="my-0 py-0 h3 fas fa-envelope"></i>
-        </a>
-        <a class="text-dark nav-item nav-link py-0 d-flex align-items-center" href="https://github.com/MStonehouse" target="_blank">
-          <i class="my-0 py-0 h3 fab fa-github-square"></i>
-        </a>
-        <a class="text-dark nav-item nav-link py-0 d-flex align-items-center" href="https://www.linkedin.com/in/mike-stonehouse-4a06871a4/" target="_blank">
-          <i class="my-0 py-0 h3 fab fa-linkedin"></i>
-        </a>
-        <a class="text-dark nav-item nav-link py-0 d-flex align-items-center" href="https://codepen.io/Stonehouse" target="_blank">
-          <i class="my-0 py-0 h3 fab fa-codepen"></i>
-        </a>
-      </ul>
-    </div>
+  <nav>
+    <img src="" alt="logo">
+    <ul>
+      <li>
+        <a id="copy-email"><i class="fas fa-envelope"></i></a>
+      </li>
+      <li>
+        <a href="https://github.com/MStonehouse" target="_blank"><i class="fab fa-github-square"></i></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/mike-stonehouse-4a06871a4/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </li>
+      <li>
+        <a href="https://codepen.io/Stonehouse" target="_blank"><i class="fab fa-codepen"></i></a>
+      </li>
+    </ul>
   </nav>
-  <!-- END NAVBAR -->
+
+<!--
+  <nav>
+    <img src="" alt="Website logo">
+    <ul>
+
+      <li><a href="#p1"><div class="nav-text-top">Home</div><div class="nav-text-bottom">Home</div></a></li>
+      <li><a href="#p1"><div class="nav-text-top">About</div><div class="nav-text-bottom">About</div></a></li>
+      <li><a href="#p1"><div class="nav-text-top">Contact</div><div class="nav-text-bottom">Contact</div></a></li>
+
+    </ul>
+  </nav>
+-->
+
+  <!--
+  <div id="transition-box">
+    <h1 id="transition-text-top">transition this text</h1>
+    <h1 id="transition-text-bottom">transition this text</h1>
+  </div>
+  -->
 
 
-  <!-- don't use jumbotron, it has a background color by default -->
-  <div class="container my-5 py-5 text-light">
-    <h1 class="">Mike Stonehouse</h1>
-    <p class="lead">I Design and Build Digital Products</p>
-    <p class="">
-      I like working with new tech, frameworks and code, anything to make a
-      great product for the end user. I'm always happy to work on something new
-      so if you'd like to get a project started feel free to get in touch.
-    </p>
+  <div class="jumbotron">
+    <div class="jumbotron-inner container">
+      <h1>Mike Stonehouse</h1>
+      <hr>
+      <h3>Web Developer</h3>
+      <p>
+        I love that code has the ability to bring new ideas to life. To be able
+        to learn a language or framework and apply that to a real world problem
+        has so much potential. Whether I am working on UX, UI, web, mobile, or
+        apps, I'm always trying to find new ways to improve my skills.
+      </p>
+    </div>
   </div>
 
 
 
+  <div class="container">
+    <div class="project-intro">
+      <h1>Recent Projects</h1>
+    </div>
+  </div>
 
 
+  <!-- project tile #1 begins -->
+  <div class="container">
 
-
-
-  <!-- start full width container, this is so a background color can be added -->
-  <div class="w-100 mb-5 bg-light">
-
-
-    <!-- PROJECT CONTAINER #1 -->
-    <div class="container rounded shadow p-3 my-5 bg-white">
-      <div class="d-flex flex-column flex-md-row p-2">
-        <div class="mr-3 mb-1">
-          <img src="assets/ic_launcher.png" class="img-fluid" style="height: 100px; width: 100px; min-width: 100px;">
+    <div class="project">
+      <div class="project-header"> <!-- project header row, collapse to column on mobile -->
+        <div class="project-icon">
+          <img src="assets/ic_launcher.png" alt="">
         </div>
-        <div class="d-flex flex-column justify-content-around">
-          <h1 class="font-weight-light py-md-0 py-2">Machinist Companion</h1>
-          <h3 class="lead">An Intuitive and Easy to Use Machinist App</h3>
+        <div class="project-title"> <!-- title/subtitle container, display as column -->
+          <h2>Machinist Companion</h2>
+          <p>An Intuitive and Easy to Use Machinist App</p>
         </div>
       </div>
 
-      <div class="container py-3 px-1 px-sm-3 px-md-5 d-flex flex-column flex-sm-row justify-content-around align-items-center my-1">
-        <img class="p-2 d-none d-md-block" src="assets/p2.png" style="width: 95%; max-width: 820px;">
-        <img class="p-2 d-md-none" src="assets/mc2.png" style="width: 90%; max-width: 280px;">
+      <div class="project-image"> <!-- project image container, switch between desktop and mobile image -->
+        <img class="img-desktop" src="assets/p2.png" alt="">
+        <img class="img-mobile project-1" src="assets/mc2.png" alt="">
       </div>
 
-      <div class="p-2">
-        <p class="">
-          Machinist companion is an easy to use machinist reference and
+      <div class="project-text">
+        <p>
+          Machinist Companion is an easy to use machinist reference and
           calculator designed to help CNC and manual machinists make parts
           faster. All calculations auto complete so no outdated data is ever
           seen by the user and the interface has been designed to work on the
@@ -114,347 +106,166 @@
         </p>
       </div>
 
-      <div class="p-2">
-        <ul class="list-group list-group-horizontal-lg">
-          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-            <i class="fab fa-react h2 pr-2 m-0"></i>
-            <span class="">React Native</span>
-          </li>
-          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-            <i class="fab fa-js-square h2 pr-2 m-0"></i>
-            <span class="">Javascript</span>
-          </li>
-          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-            <i class="fab fa-node-js h2 pr-2 m-0"></i>
-            <span class="">Node JS</span>
-          </li>
-          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-            <i class="fab fa-bootstrap h2 pr-2 m-0"></i>
-            <span class="">Bootstrap</span>
-          </li>
-        </ul>
-      </div>
 
-      <!-- this is a new set of buttons that collapses @ lg break point -->
-      <div class="d-flex flex-column p-2">
-        <a class="my-2 mr-lg-auto" href="https://machinistcompanion.com" target="_blank">
-          <button class="btn btn-secondary btn-block"><img src="assets/mics.png" class="pr-2" id="mics-in-button">Check out the webnsite</button>
-        </a>
-        <a class="my-2 mr-lg-auto" href="https://play.google.com/store/apps/details?id=com.stonehousedigital.machinistcompanionlite" target="_blank">
-          <button class="btn btn-secondary btn-block"><i class="fab fa-google-play h5 my-0 pr-2"></i>Download on Google Play</button>
-        </a>
-        <a class="my-2 mr-lg-auto" href="https://apps.apple.com/us/app/machinist-companion/id1516321178?ls=1" target="_blank">
-          <button class="btn btn-secondary btn-block"><i class="fab fa-app-store-ios h5 my-0 pr-2"></i>Download on Apple App Store</button>
-        </a>
+      <!-- add list of technologies used here -->
+      <!--
+      <div class="project-technologies">
+        <div class="tech-row tech-row-top">
+          <p>React Native</p>
+        </div>
+        <div class="tech-row">
+          <p>React Native</p>
+        </div>
+        <div class="tech-row">
+          <p>React Native</p>
+        </div>
+        <div class="tech-row tech-row-bottom">
+          <p>React Native</p>
+        </div>
+      </div>
+    -->
+
+      <div class="project-download">
+        <!-- download links -->
+
+        <div class="project-download-item">
+          <a href="https://play.google.com/store/apps/details?id=com.stonehousedigital.machinistcompanionlite" target="_blank">
+            <button class="button"><i class="fab fa-google-play"></i>Download on Google Play</button>
+          </a>
+        </div>
+        <div class="project-download-item">
+          <a href="https://apps.apple.com/us/app/machinist-companion/id1516321178?ls=1" target="_blank">
+            <button class="button"><i class="fab fa-app-store-ios"></i>Download on Apple App Store</button>
+          </a>
+        </div>
+
       </div>
 
     </div>
-    <!-- PROJECT CONTAINER END -->
+
+  </div>
+  <!-- project tile ends -->
 
 
-    <!-- PROJECT CONTAINER #2 -->
-    <div class="container rounded shadow p-3 my-5 bg-white">
-      <div class="d-flex flex-column flex-md-row p-2">
-        <div class="mr-3 mb-1">
-          <img src="assets/DDH-calc.png" class="img-fluid" style="height: 100px; width: 100px; min-width: 100px;">
+
+
+  <!-- project tile #2 begins -->
+  <div class="container">
+
+    <div class="project">
+      <div class="project-header"> <!-- project header row, collapse to column on mobile -->
+        <div class="project-icon">
+          <img src="assets/DDH-calc.png" alt="">
         </div>
-        <div class="d-flex flex-column justify-content-around">
-          <h1 class="font-weight-light py-md-0 py-2">Hip Ultrasound Calculator</h1>
-          <h3 class="lead">Desktop Application for Booking Hip Ultrasounds in Newborns</h3>
+        <div class="project-title"> <!-- title/subtitle container, display as column -->
+          <h2>Hip Ultrasound Calculator</h2>
+          <p>Desktop Application for Booking Hip Ultrasounds in Newborns</p>
         </div>
       </div>
 
-      <div class="container py-3 px-1 px-sm-3 px-md-5 d-flex flex-column flex-sm-row justify-content-around align-items-center my-1">
-        <img class="p-2 d-none d-md-block" src="assets/p1.png" style="width: 95%; max-width: 820px;">
-        <img class="p-2 d-md-none" src="assets/ddh-hip-ultrasound-calc.png" style="width: 90%; max-width: 400px;">
+      <div class="project-image"> <!-- project image container, switch between desktop and mobile image -->
+        <img class="img-desktop" src="assets/p1.png" alt="">
+        <img class="img-mobile project-2" src="assets/ddh-hip-ultrasound-calc.png" alt="">
       </div>
 
-      <div class="p-2">
-        <p class="">
+      <div class="project-text">
+        <p>
           All newborns at increased risk for developmental dysplasia of the
           hips (DDH) should be screened for DDH by hip ultrasound at 46 weeks
           of gestation. The DDH Hip Ultrasound Calculator will help determine
-          the appropriate booking date (at least 46 weeks of gestation) based
+          the appropriate booking date (46 weeks of gestation) based
           on the newborn's date of birth and gestational age at birth.
         </p>
       </div>
 
-      <div class="p-2">
-        <ul class="list-group list-group-horizontal-lg">
-          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-            <i class="fab fa-react h2 pr-2 m-0"></i>
-            <span class="">Electron</span>
-          </li>
-          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-            <i class="fab fa-js-square h2 pr-2 m-0"></i>
-            <span class="">Javascript</span>
-          </li>
-          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-            <i class="fab fa-node-js h2 pr-2 m-0"></i>
-            <span class="">Node JS</span>
-          </li>
-          <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-            <i class="fab fa-bootstrap h2 pr-2 m-0"></i>
-            <span class="">Bootstrap</span>
-          </li>
-        </ul>
+      <div>
+        <!-- add list of technologies used here -->
       </div>
 
     </div>
-    <!-- PROJECT CONTAINER END -->
 
-
-
-
-  <!--
-    <div class="container my-5 rounded shadow p-4 bg-white">
-      <ul class="list-group list-group-horizontal-lg">
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <span class="">Technologies used</span>
-        </li>
-      </ul>
-      <ul class="list-group list-group-horizontal-lg">
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <span class="">Technologies used</span>
-        </li>
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <i class="fab fa-react h2 pr-2 m-0"></i>
-          <span class="">Electron</span>
-        </li>
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <i class="fab fa-js-square h2 pr-2 m-0"></i>
-          <span class="">Javascript</span>
-        </li>
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <i class="fab fa-node-js h2 pr-2 m-0"></i>
-          <span class="">Node JS</span>
-        </li>
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <i class="fab fa-bootstrap h2 pr-2 m-0"></i>
-          <span class="">Bootstrap</span>
-        </li>
-      </ul>
-    </div>
-  -->
+  </div>
+  <!-- project tile ends -->
 
 
 <!--
-    <div class="container my-4">
-
-      <div class="list-group">
-
-        <div class="list-group-item d-flex w-100 justify-content-between">
-          <h5 class="mb-1">heading</h5>
-        </div>
-
-
-
-        <div class="list-group-item d-flex justify-content-between">
-          <h5 class="mb-1">item</h5>
-        </div>
-
-        <div class="list-group-item d-flex justify-content-between">
-          <h5 class="mb-1">item</h5>
-        </div>
-
-        <div class="list-group-item d-flex justify-content-between">
-          <h5 class="mb-1">item</h5>
-        </div>
-
-      </div>
-    </div>
--->
-
-<!--
-    <div class="container py-5">
-      <div class="list-group">
-        <div class="list-group-item d-flex justify-content-between">
-          <p class="my-0">heading</p>
-        </div>
-        <div class="list-group-item d-flex justify-content-between">
-          <p class="my-0">heading</p>
-        </div>
-        <div class="list-group-item d-flex justify-content-between">
-          <p class="my-0">heading</p>
-        </div>
-      </div>
-    </div>
+<div class="test">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,256L80,250.7C160,245,320,235,480,208C640,181,800,139,960,112C1120,85,1280,75,1360,69.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+</div>
 -->
 
 
 
 
 
+  <div class="footer">
+    <!-- BEGIN FOOTER -->
+    <footer class="container">
+      <div class="footer-inner">
+        <h4 class="footer-title">Like what you see, or want to see more?</h4>
 
-    <!-- TECHNOLOGIES LIST -->
-    <!--
-    <div class="container my-5 rounded shadow p-4 bg-white">
-      <ul class="list-group">
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <i class="fab fa-react h2 pr-2 m-0"></i>
-          <span class="">React Native</span>
-        </li>
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <i class="fab fa-js-square h2 pr-2 m-0"></i>
-          <span class="">Javascript</span>
-        </li>
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <i class="fab fa-node-js h2 pr-2 m-0"></i>
-          <span class="">Node JS</span>
-        </li>
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <i class="fab fa-linkedin h2 pr-2 m-0"></i>
-          <span class="">LinkedIn</span>
-        </li>
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <i class="fab fa-github-square h2 pr-2 m-0"></i>
-          <span class="">GitHub</span>
-        </li>
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <i class="fab fa-git-alt h2 pr-2 m-0"></i>
-          <span class="">Git</span>
-        </li>
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <i class="fab fa-codepen h2 pr-2 m-0"></i>
-          <span class="">CodePen</span>
-        </li>
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <i class="fab fa-bootstrap h2 pr-2 m-0"></i>
-          <span class="">Bootstrap</span>
-        </li>
-        <li class="flex-fill justify-content-center list-group-item lead d-flex align-items-center">
-          <i class="fab fa-sass h2 pr-2 m-0"></i>
-          <span class="">Sass</span>
-        </li>
-      </ul>
-    </div>
-  -->
+        <!-- onclick this element will copy email to clipboard -->
+        <a id="copy-email-footer">
+          <div class="footer-row">
+            <span class="">Send me an email:</span>
+            <i class="d-flex align-items-center h3 my-0 fas fa-envelope"></i>
+          </div>
+        </a>
+
+        <hr>
+
+        <a class="" href="https://github.com/MStonehouse" target="_blank">
+          <div class="footer-row">
+            <span class="">Check out my GitHub:</span>
+            <i class="d-flex align-items-center h3 my-0 fab fa-github-square"></i>
+          </div>
+        </a>
+
+        <hr>
+
+        <a class="" href="https://www.linkedin.com/in/mike-stonehouse-4a06871a4/" target="_blank">
+          <div class="footer-row">
+            <span class="">Check out my LinkedIn:</span>
+            <i class="d-flex align-items-center h3 my-0 fab fa-linkedin"></i>
+          </div>
+        </a>
+
+        <hr>
+
+        <a class="" href="https://codepen.io/Stonehouse" target="_blank">
+          <div class="footer-row">
+            <span class="">See what I've been working on:</span>
+            <i class="d-flex align-items-center h3 my-0 fab fa-codepen"></i>
+          </div>
+        </a>
+      </div>
 
 
 
-    <!-- end full width container -->
+    </footer>
+    <!-- END FOOTER -->
+
   </div>
 
 
 
-  <!-- BEGIN FOOTER -->
-  <footer class="container my-5 py-5 text-light">
-    <h4 class="text-center">Like what you see, or want to see more?</h4>
-    <div class="container pt-3">
-
-      <!-- onclick this element will copy email to clipboard -->
-      <a class="text-light" id="copy-email-footer" onclick="copyToClipboard(this.id)" data-container="body" data-onclicktext="Email copied to clipboard" data-toggle="popover" data-trigger="hover" data-placement="top"
-        data-content="Copy email to clipboard">
-        <div class="d-flex justify-content-between py-2 border-bottom border-secondary">
-          <span class="d-flex align-items-center">Send me an email:</span>
-          <i class="d-flex align-items-center h3 my-0 fas fa-envelope"></i>
-        </div>
-      </a>
-
-      <a class="text-light" href="https://github.com/MStonehouse" target="_blank">
-        <div class="d-flex justify-content-between py-2 border-bottom border-secondary">
-          <span class="d-flex align-items-center">Check out my GitHub:</span>
-          <i class="d-flex align-items-center h3 my-0 fab fa-github-square"></i>
-        </div>
-      </a>
-
-      <a class="text-light" href="https://www.linkedin.com/in/mike-stonehouse-4a06871a4/" target="_blank">
-        <div class="d-flex justify-content-between py-2 border-bottom border-secondary">
-          <span class="d-flex align-items-center">Check out my LinkedIn:</span>
-          <i class="d-flex align-items-center h3 my-0 fab fa-linkedin"></i>
-        </div>
-      </a>
-
-      <a class="text-light" href="https://codepen.io/Stonehouse" target="_blank">
-        <div class="d-flex justify-content-between py-2">
-          <span class="d-flex align-items-center">See what I've been working on:</span>
-          <i class="d-flex align-items-center h3 my-0 fab fa-codepen"></i>
-        </div>
-      </a>
-
-    </div>
-
-  </footer>
-  <!-- END FOOTER -->
-
-
-
-
-
-
-  <!--
-  <footer class="mt-auto py-3 bg-dark">
-    <div class="container text-center">
-      <span class="text-light">hello footer</span>
-    </div>
-  </footer>
--->
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Tippy Development -->
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 
 
   <script>
-    // initialize tooltips
+
+
+    //tippy('[data-tippy-content]');
+
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // change tippy theme
+
     /*
-    $(function() {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
+try ontrigger and onuntrigger with external function
     */
 
-    // initialize popovers
-    $(function() {
-      $('[data-toggle="popover"]').popover();
-    })
-
-    /*
-        console.log(String.fromCharCode(72, 69, 76, 76, 79));
-        console.log(String.fromCharCode(109, 105, 107, 101, 115, 116, 111, 110, 101, 104, 111, 117, 115, 101, 64, 112, 114, 111, 116, 111, 110, 109, 97, 105, 108, 46, 99, 111, 109));
-
-        let g4 = String.fromCharCode(49, 48, 57, 32, 49, 48, 53, 32, 49, 48, 55, 32, 49, 48, 49, 32, 49, 49, 53, 32, 49, 49, 54, 32, 49, 49, 49, 32, 49, 49, 48, 32, 49, 48, 49, 32, 49, 48, 52, 32, 49, 49, 49, 32, 49, 49, 55, 32, 49, 49, 53, 32, 49, 48, 49, 32, 54, 52, 32, 49, 49, 50, 32, 49, 49, 52, 32, 49, 49, 49, 32, 49, 49, 54, 32, 49, 49, 49, 32, 49, 49, 48, 32, 49, 48, 57, 32, 57, 55, 32, 49, 48, 53, 32, 49, 48, 56, 32, 52, 54, 32, 57, 57, 32, 49, 49, 49, 32, 49, 48, 57, 32).trim();
-
-        console.log(typeof g4);
-        let g5 = g4.replace(/\s/g, ', ');
-        console.log(typeof g5);
-        console.log(g5);
-        console.log('g5 is: ' + g5);
-        let g6 = String.fromCharCode(g5);
-        console.log(g6);
-        */
-
-    function copyToClipboard(clickedId) {
-      /*
-       * function to copy data to clipboard using bootstrap and jQuery
-       *
-       * for this function to work add an id to the popover
-       * pass the id into the onclick function like so onclick="copyToClipboard(this.id)"
-       * add the data-onclicktext"" data attribute to pass in the data you would like to be displayed in the popover on success
-       *
-       */
-      let jqueryId = '#' + clickedId;
-      let clipboardData = String.fromCharCode(109, 105, 107, 101, 115, 116, 111, 110, 101, 104, 111, 117, 115, 101, 64, 112, 114, 111, 116, 111, 110, 109, 97, 105, 108, 46, 99, 111, 109)
-      let originalText = $(jqueryId).attr('data-content');
-      let textForClick = $(jqueryId).attr('data-onclicktext');
-      navigator.clipboard.writeText(clipboardData).then(function() {
-        // success
-        console.log('data copied to clipboard');
-        $(jqueryId).popover('hide');
-        $(jqueryId).attr('data-content', textForClick);
-        $(jqueryId).popover('show');
-        setTimeout(function() {
-          $(jqueryId).popover('hide');
-          $(jqueryId).attr('data-content', originalText);
-        }, 1500);
-      }, function() {
-        //failure
-        console.log('copy to clipboard failed');
-        window.location.href = 'mailto:' + clipboardData;
-      })
-    }
 
 
 
@@ -462,43 +273,157 @@
 
 
 
-    /*
-        // copy email to clipboard onclick
-        // include id of button you want to target
-        function copyToClipboard(clickedId) {
-          let email = 'mikestonehouse@protonmail.com';
-          let jqueryId = '#' + clickedId;
-          //console.log('this comes out as: ' + this)
 
-          console.log('the passed in ID is: ' + clickedId)
 
-          navigator.clipboard.writeText(email).then(function(e) {
-            console.log('copy email to clipboard was successful');
-            console.log(e);
-            console.log('mailto:' + email);
 
-            //$(jqueryId).attr("data-trigger", "click");
 
-            $(jqueryId).popover('hide');
-            $(jqueryId).attr("data-content", "Copied to clipboard");
-            $(jqueryId).popover('show');
+    // !!!!!! saving progress
+    // tippy tooltip
+    tippy('#copy-email', {
+      // !!!! try adding a theme
+      // !!!! placement
+      placement: 'bottom',
+      hideOnClick: false,
+      trigger: 'mouseenter focus',
+      content: 'Copy email to clipboard',
+      onTrigger(instance) { // was onCreate
+
+        // add event listener to look for click
+        console.log('tippy triggered')
+        document.getElementById('copy-email').onclick = function() {
+          let clipboardData = String.fromCharCode(109, 105, 107, 101, 115, 116, 111, 110, 101, 104, 111, 117, 115, 101, 64, 112, 114, 111, 116, 111, 110, 109, 97, 105, 108, 46, 99, 111, 109)
+
+          // copy email to clipboard
+          navigator.clipboard.writeText(clipboardData).then(function() {
+            // success
+            console.log('data copied to clipboard');
+            instance.setProps({trigger: 'manual'});
+            instance.setContent('Email copied to clipboard');
+            instance.show();
             setTimeout(function() {
-              //$(jqueryId).popover('hide');
-              $(jqueryId).attr("data-content", "Copy email to clipboard");
-            }, 1000);
+              instance.hide();
+              instance.setProps({trigger: 'mouseenter focus'});
+            }, 1500);
           }, function() {
-            console.log('copy email to clipboard failed');
-            // if copying email to clipboard failed open mailto:
-            console.log('mailto:' + email)
-            window.location.href = 'mailto:' + email;
-          });
+            //failure
+            console.log('copy to clipboard failed');
+            window.location.href = 'mailto:' + clipboardData;
+          })
         }
-    */
+      },
+      onHidden(instance) {
+        instance.setContent('Copy email to clipboard');
+        document.getElementById('copy-email').blur();
+        // try removing event listener to prevent repeated calls
+        //document.getElementById("copy-email").removeEventListener("click");
+      }
+    });
 
-    //console.log(window.navigator);
+
+
+    // !!!!!! saving progress
+    // tippy tooltip
+    tippy('#copy-email-footer', {
+      // !!!! try adding a theme
+      // !!!! placement
+      theme: 'footer-theme',
+      placement: 'top',
+      hideOnClick: false,
+      trigger: 'mouseenter focus',
+      content: 'Copy email to clipboard',
+      onTrigger(instance) { // was onCreate
+
+        // add event listener to look for click
+        console.log('tippy triggered')
+        document.getElementById('copy-email-footer').onclick = function() {
+          let clipboardData = String.fromCharCode(109, 105, 107, 101, 115, 116, 111, 110, 101, 104, 111, 117, 115, 101, 64, 112, 114, 111, 116, 111, 110, 109, 97, 105, 108, 46, 99, 111, 109)
+
+          // copy email to clipboard
+          navigator.clipboard.writeText(clipboardData).then(function() {
+            // success
+            console.log('data copied to clipboard');
+            instance.setProps({trigger: 'manual'});
+            instance.setContent('Email copied to clipboard');
+            instance.show();
+            setTimeout(function() {
+              instance.hide();
+              instance.setProps({trigger: 'mouseenter focus'});
+            }, 1500);
+          }, function() {
+            //failure
+            console.log('copy to clipboard failed');
+            window.location.href = 'mailto:' + clipboardData;
+          })
+        }
+      },
+      onHidden(instance) {
+        instance.setContent('Copy email to clipboard');
+        document.getElementById('copy-email-footer').blur();
+        // try removing event listener to prevent repeated calls
+        //document.getElementById("copy-email").removeEventListener("click");
+      }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
+    // !!!!!! this version works
+    // tippy tooltip
+    tippy('#copy-email', {
+      // !!!! try adding a theme
+      hideOnClick: false,
+      trigger: 'mouseenter focus',
+      content: 'Copy email to clipboard',
+      onCreate(instance) {
+        // add event listener to look for click
+        console.log('tippy created')
+        document.getElementById('copy-email').addEventListener('click', function() {
+          let clipboardData = String.fromCharCode(109, 105, 107, 101, 115, 116, 111, 110, 101, 104, 111, 117, 115, 101, 64, 112, 114, 111, 116, 111, 110, 109, 97, 105, 108, 46, 99, 111, 109)
+
+          // copy email to clipboard
+          navigator.clipboard.writeText(clipboardData).then(function() {
+            // success
+            console.log('data copied to clipboard')
+            instance.setProps({trigger: 'manual'});
+            instance.setContent('Email copied to clipboard');
+            instance.show();
+            setTimeout(function() {
+              instance.hide();
+              instance.setProps({trigger: 'mouseenter focus'});
+            }, 1500);
+          }, function() {
+            //failure
+            console.log('copy to clipboard failed');
+            window.location.href = 'mailto:' + clipboardData;
+          })
+        })
+      },
+      onHidden(instance) {
+        instance.setContent('Copy email to clipboard');
+        document.getElementById('copy-email').blur();
+        // try removing event listener to prevent repeated calls
+        //document.getElementById("copy-email").removeEventListener("click");
+      }
+    });
+  */
+
+
+
+
+
   </script>
-
-
 
 </body>
 

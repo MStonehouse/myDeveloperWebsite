@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
+* {
+  font-family: 'Red Hat Display';
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+/* styling for navbar begins, this uses flex */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+  /*background-color: rgba(0, 0, 0, .8);*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+
+  /*height: 0;*/
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  /*align-self: stretch;*/ /* needed in case logo stretches nav links */
+  /*display: inline;*/
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+
+  /*border: 1px solid blue;*/
+  /*display: inline;*/
+  /*display: block;*/
+  /*padding: 10px;*/
+}
+
+nav i {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid red;*/
+}
+
+nav li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  /*display: block;*/
+  padding: 6px;
+  display: flex;
+  margin: 0 10px;
+  /*
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  */
+
+  /*padding: 20px;*/
+  color: #fff;
+
+
+}
+
+
+
+nav img {
+  color: #fff;
+  padding: 0 16px;
+  height: 60px; /* remove later */
+  /*border: 1px solid red;*/
+  display: flex;
+  align-items: center;
+}
+
+
+/* styling for navbar ends, this uses flex */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animations for navbar begins */
+nav {
+  /*opacity: 0.8;*/
+  transition: 0.4s;
+}
+
+
+nav li {
+  /*border: 1px solid blue;*/
+}
+
+nav i {
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid red;*/
+}
+
+
+nav li a {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  /*
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid green;
+  */
+  /*border-radius: 3px;*/
+  /*background-image: linear-gradient(rgb(227, 227, 227), rgb(130, 130, 130));*/
+
+  transition: 0.4s;
+}
+
+nav:hover {
+  opacity: 1;
+}
+
+nav li a:hover {
+  border: 1px solid grey;
+  /*
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid transparent;
+  */
+  /*background-color: rgb(113, 113, 113);*/
+  /*background-image: linear-gradient(rgb(130, 130, 130), rgb(227, 227, 227));*/
+  color: #f77f00;
+}
+
+/* animations for navbar ends */
+
+
+
+
+
+
+#transition-box {
+  margin: 200px;
+  padding: 20px;
+  border: 1px solid black;
+  position: relative;
+  height: 200px;
+  overflow: hidden; /* toggle this line on and off to see acual transition */
+}
+
+#transition-text-top {
+  color: #000;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: 0.6s;
+}
+
+#transition-text-bottom {
+  color: red;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  transition: 0.6s;
+}
+
+#transition-box:hover #transition-text-top {
+  top: -100%;
+}
+
+#transition-box:hover #transition-text-bottom {
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling for navbar ends, this uses flex */
+
+
+
+/*
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+*/
+
+
+/* styling for navbar begins, this uses floats */
+/* clearFix to fix div collapse when floating items */
+/*
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  border: 1px solid red;
+  background-color: pink;
+
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  border: 1px solid green;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  color: #000;
+  border: 1px solid blue;
+}
+
+nav li a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+nav img {
+  height: 100px;
+  display: inline-block;
+  float: left;
+  border: 1px solid magenta;
+  padding: 5px;
+}
+*/
+/* styling for navbar ends, this uses floats */
+
+h1 {
+  color: green;
+}
