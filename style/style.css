@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
 
 * {
-  font-family: 'Red Hat Display';
+  font-family: 'Red Hat Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #f8f9fa; /*#f8f9fa;*/ /*#eaedf1;*/
+  background-color: #f8f9fa;
+  margin: 0;
 }
-
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* don't forget to add a font stack */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -30,6 +26,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-logo {
+  height: 24px;
 }
 
 nav ul {
@@ -55,7 +55,7 @@ nav li a {
   display: flex;
   margin: 5px 1.5vw;
   background-color: transparent;
-  color: #a3a3a3; /* color of navbar icon without hover */
+  color: #a3a3a3;
 }
 
 nav img {
@@ -68,48 +68,7 @@ nav img {
 
 
 
-
-
-
-
-
 /* animations for navbar begins */
-
-
-/* below is the animation for sliding the navbar down into view */
-/* doesn't work with current layout */
-/*
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-100%);
-  }
-  30% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-nav {
-  animation-name: slideInFromTop;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-}
-*/
-
-nav li {
-  /*padding: 0;*/
-  /*margin: 0;*/
-}
-
-nav i {
-  /*margin: 0;*/
-  /*padding: 0;*/
-}
-
 nav li a {
   border: 1px solid transparent;
   border-radius: 3px;
@@ -122,42 +81,29 @@ nav:hover {
 
 nav li a:hover {
   border: 1px solid grey;
-  color: #fff; /* color of navbar icon on-hover */
+  color: #fff;
   background-color: rgb(90, 90, 90);
 }
-
 /* animations for navbar ends */
 
 
 
-
-
-
-
-
-
 /* Jumbotron section styling begins */
-
 .jumbotron {
-  /*padding: 6vw;*/
   padding: 6vw 0;
   /* set background color to match final image for loading */
   background-color: #343434;
-  background-image: linear-gradient(to top, rgba(32, 35, 42, 0.5),  rgba(32, 35, 42, 0.5)), url("../assets/bg7.jpg");
+  background-image: linear-gradient(to top, rgba(32, 35, 42, 0.5),  rgba(32, 35, 42, 0.5)), url("../assets/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
-
 .jumbotron-inner {
-  /*max-width: 960px;*/ /* 1080px; */
   margin: 0 auto;
   border-radius: 4px;
   padding: 1em;
   background-color: rgba(32, 35, 42, 0.8);
-  /*border: 1px solid blue;*/
   color: #fff;
 }
 
@@ -166,7 +112,6 @@ nav li a:hover {
   font-size: 2.5rem;
   line-height: 1.2;
   padding: 1rem 0;
-
 }
 
 .jumbotron-inner h3 {
@@ -182,13 +127,11 @@ nav li a:hover {
   line-height: 1.2;
   padding: 0.2rem 0;
 }
-
-
 /* Jumbotron section styling ends */
 
 
-/* project intro styling begins */
 
+/* project intro styling begins */
 .project-intro h1 {
   font-weight: 300;
   font-size: 2.6rem;
@@ -201,31 +144,24 @@ nav li a:hover {
 
 
 /* project tile styling begins */
-
 .container {
   margin: 0 auto;
 }
 
 .project {
-  /*border: 1px solid rgba(0, 0, 0, 0.125);*/
   border-radius: 5px;
-  /*box-shadow: 0px 6px 5px 1px rgba(133,133,133,1);*/
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   margin: 4vw auto;
   padding: 16px;
-  /*max-width: 960px;*/
   background-color: #fff;
 }
 
 .project-header {
-  /*border: 1px solid purple;*/
   display: flex;
   flex-direction: column;
-  /*margin-bottom: 20px;*/
 }
 
 .project-header h2 {
-  /*border: 1px solid green;*/
   font-weight: 300;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
@@ -234,7 +170,6 @@ nav li a:hover {
 }
 
 .project-header p {
-  /*border: 1px solid blue;*/
   font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.2;
@@ -242,24 +177,16 @@ nav li a:hover {
 
 .project-icon {
   margin-right: 3vw;
-  /*border: 3px solid salmon;*/
 }
 
 .project-icon img {
-
   width: 100px; /* size icon later to suit finished website */
   height: 100px;
-  /*border: 1px solid blue;*/
-}
-
-.project-title {
-  /*border: 3px solid green*/
 }
 
 .project-image {
   display: flex;
   flex-direction: column;
-
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -268,11 +195,9 @@ nav li a:hover {
 .project-image img {
   padding: 20px;
   margin: 0 auto;
-  /*border: 1px solid green;*/
-
 }
 
-.img-mobile{ /* not working */
+.img-mobile{
   width: 100%;
 }
 
@@ -296,40 +221,30 @@ nav li a:hover {
   text-align: left;
 }
 
-
-.project-technologies {
-  /*border: 1px solid red;*/
-  margin: 20px 0;
+.tech-list {
+  margin: 10px auto;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .tech-row {
-  border-bottom: 1px solid blue;
-  border-right: 1px solid blue;
-  border-left: 1px solid blue;
   text-align: center;
   padding: 8px;
+  font-weight: 300;
+  font-size: 1.4rem;
 }
 
-.tech-row-top {
-  border-top: 1px solid blue;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+.tech-divider {
+  border: none;
+  border-top: 1px solid #dfdfdf;
 }
-
-.tech-row-bottom {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-
-
 
 .project-download {
   margin-top: 20px;
   font-size: 22px;
 }
-
-
 
 .project-download-item {
   margin: 8px 0;
@@ -352,7 +267,7 @@ nav li a:hover {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1rem;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -365,24 +280,28 @@ nav li a:hover {
   color: white;
   border: 2px solid #007bff;
 }
-
 /* project tile styling ends */
 
 
 
-
 /* footer styling begins */
-
-hr {
+.footer hr {
   border: none;
   border-top: 1px solid #6c757d;
-
 }
 
 .footer {
-  background-color: #252a2f; /*#343a40;*/
+  background-color: #252a2f;
   color: #fff;
   padding: 50px 0 3vw 0;
+  background-image: url("../assets/wave.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer > svg {
+  display: block;
 }
 
 .footer-inner {
@@ -390,7 +309,6 @@ hr {
 }
 
 .footer-title {
-  /*border: 1px solid red;*/
   text-align: center;
   font-size: 1.5rem;
   font-weight: 500;
@@ -421,7 +339,6 @@ hr {
 .footer a:hover {
   color: #a3a3a3;
 }
-
 /* footer styling ends */
 
 
@@ -429,7 +346,6 @@ hr {
 
 
 /* tippy styling begins */
-
 .tippy-box[data-theme~='footer-theme'] {
   background-color: #e0e0e0;
   color: #000;
@@ -438,46 +354,23 @@ hr {
 .tippy-box[data-theme~='footer-theme'][data-placement^='top'] > .tippy-arrow::before {
   border-top-color: #e0e0e0;
 }
+
 .tippy-box[data-theme~='footer-theme'][data-placement^='bottom'] > .tippy-arrow::before {
   border-bottom-color: #e0e0e0;
 }
+
 .tippy-box[data-theme~='footer-theme'][data-placement^='left'] > .tippy-arrow::before {
   border-left-color: #e0e0e0;
 }
+
 .tippy-box[data-theme~='footer-theme'][data-placement^='right'] > .tippy-arrow::before {
   border-right-color: #e0e0e0;
 }
-
 /* tippy styling ends */
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* test styling begin */
-
-.test {
-  max-height: 320px;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  background-color: pink;
-  border: 1px solid red;
-}
-
-
-/* test styling end */
 
 
 
@@ -502,9 +395,9 @@ hr {
 */
 
 
-/* below are the bootstrap breakpoints */
+/* breakpoints begin */
 
-@media screen and (min-width: 576px) {
+@media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
   }
@@ -514,7 +407,7 @@ hr {
 
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .container, .container-sm, .container-md {
     max-width: 720px;
   }
@@ -529,13 +422,13 @@ hr {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
     max-width: 960px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px;
   }
@@ -543,7 +436,7 @@ hr {
 
 /* switch directions */
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .jumbotron {
     padding: 6vw;
   }
@@ -562,7 +455,7 @@ hr {
 
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
   .img-desktop {
     display: none;
@@ -570,215 +463,11 @@ hr {
 
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
 
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
 
 }
-
-
-
 /* break points end */
-
-
-
-
-
-
-
-
-
-
-
-
-/* tooltip begins*/
-
-/*
-.tooltip-container {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-
-}
-
-.tooltip-container .tooltip {
-  text-transform: none;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: normal;
-  background-color: rgb(90, 90, 90);
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-  border-radius: 5px;
-  position: absolute;
-  top: 122%;
-  left: 50%;
-  width: 120px;
-  transform: translate(-50%);
-  z-index: 1;
-  visibility: hidden;
-  opacity: 0;
-  transition: 1s;
-}
-
-.tooltip-container:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-
-.tooltip-container .tooltip::after {
-  content: " ";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent rgb(90, 90, 90) transparent;
-}
-*/
-
-
-/* tooltip ends*/
-
-
-
-/*
-#transition-box {
-  margin: 200px;
-  padding: 20px;
-  border: 1px solid black;
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-}
-
-#transition-text-top {
-  color: #000;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  transition: 0.6s;
-}
-
-#transition-text-bottom {
-  color: red;
-  position: absolute;
-  bottom: 0;
-  height: 0;
-  transition: 0.6s;
-}
-
-#transition-box:hover #transition-text-top {
-  top: -100%;
-}
-
-#transition-box:hover #transition-text-bottom {
-  height: 100%;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* styling for navbar ends, this uses flex */
-
-
-
-/*
-html {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-*/
-
-
-/* styling for navbar begins, this uses floats */
-/* clearFix to fix div collapse when floating items */
-/*
-nav:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-nav {
-  border: 1px solid red;
-  background-color: pink;
-
-}
-
-nav ul {
-  list-style-type: none;
-  float: right;
-  margin: 0;
-  padding: 0;
-  border: 1px solid green;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav li a {
-  font-size: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-  color: #000;
-  border: 1px solid blue;
-}
-
-nav li a:hover {
-  background-color: #555;
-  color: #fff;
-}
-
-nav img {
-  height: 100px;
-  display: inline-block;
-  float: left;
-  border: 1px solid magenta;
-  padding: 5px;
-}
-*/
-/* styling for navbar ends, this uses floats */

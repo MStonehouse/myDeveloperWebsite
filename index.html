@@ -3,23 +3,22 @@
 
 <head>
   <title>Mike Stonehouse | Web Developer</title>
-  <link rel="stylesheet" href="style/style.css">
-
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="description" content="Easy to use machinist app with calculators and references, will calculate speeds and feeds, tap drill charts, drill chart, tap hole size">
+  <meta name="keywords" content="machinist,app,best,reference,calculator,machinist companion,machinist companion lite,best machinist app,machinist app,machinist calculator,machinist reference">
+  <meta name="author" content="Mike Stonehouse">
+  <meta name="Copyright" content="Copyright Mike Stonehouse. All Rights Reserved.">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/appletouch.png">
+  <link rel="stylesheet" href="style/style.css">
   <script src="https://kit.fontawesome.com/b004ee397a.js" crossorigin="anonymous"></script>
-
-
-
 </head>
 
 <body>
-
   <nav>
-    <!--
-    <img src="" alt="MS">
-  -->
-    <p></p>
+    <img class="nav-logo" src="assets/navbar-logo.png" alt="logo">
     <ul>
       <li>
         <a id="copy-email"><i class="fas fa-envelope"></i></a>
@@ -36,27 +35,6 @@
     </ul>
   </nav>
 
-<!--
-  <nav>
-    <img src="" alt="Website logo">
-    <ul>
-
-      <li><a href="#p1"><div class="nav-text-top">Home</div><div class="nav-text-bottom">Home</div></a></li>
-      <li><a href="#p1"><div class="nav-text-top">About</div><div class="nav-text-bottom">About</div></a></li>
-      <li><a href="#p1"><div class="nav-text-top">Contact</div><div class="nav-text-bottom">Contact</div></a></li>
-
-    </ul>
-  </nav>
--->
-
-  <!--
-  <div id="transition-box">
-    <h1 id="transition-text-top">transition this text</h1>
-    <h1 id="transition-text-bottom">transition this text</h1>
-  </div>
-  -->
-
-
   <div class="jumbotron">
     <div class="jumbotron-inner container">
       <h1>Mike Stonehouse</h1>
@@ -71,30 +49,27 @@
     </div>
   </div>
 
-
-
+  <!-- project intro begins-->
   <div class="container">
     <div class="project-intro">
       <h1>Recent Projects</h1>
     </div>
   </div>
 
-
   <!-- project tile #1 begins -->
   <div class="container">
-
     <div class="project">
-      <div class="project-header"> <!-- project header row, collapse to column on mobile -->
+      <div class="project-header">
         <div class="project-icon">
           <img src="assets/ic_launcher.png" alt="">
         </div>
-        <div class="project-title"> <!-- title/subtitle container, display as column -->
+        <div class="project-title">
           <h2>Machinist Companion</h2>
           <p>An Intuitive and Easy to Use Machinist App</p>
         </div>
       </div>
 
-      <div class="project-image"> <!-- project image container, switch between desktop and mobile image -->
+      <div class="project-image">
         <img class="img-desktop" src="assets/p2.png" alt="">
         <img class="img-mobile project-1" src="assets/mc2.png" alt="">
       </div>
@@ -109,28 +84,29 @@
         </p>
       </div>
 
-
-      <!-- add list of technologies used here -->
-      <!--
-      <div class="project-technologies">
-        <div class="tech-row tech-row-top">
-          <p>React Native</p>
-        </div>
+      <div class="tech-list">
         <div class="tech-row">
-          <p>React Native</p>
+          <i class="fab fa-react"></i>
+          <span class="">React Native</span>
         </div>
+        <hr class="tech-divider">
         <div class="tech-row">
-          <p>React Native</p>
+          <i class="fab fa-js-square"></i>
+          <span class="">Javascript</span>
         </div>
-        <div class="tech-row tech-row-bottom">
-          <p>React Native</p>
+        <hr class="tech-divider">
+        <div class="tech-row">
+          <i class="fab fa-node-js"></i>
+          <span class="">Node JS</span>
+        </div>
+        <hr class="tech-divider">
+        <div class="tech-row">
+          <i class="fab fa-bootstrap"></i>
+          <span class="">Bootstrap</span>
         </div>
       </div>
-    -->
 
       <div class="project-download">
-        <!-- download links -->
-
         <div class="project-download-item">
           <a href="https://play.google.com/store/apps/details?id=com.stonehousedigital.machinistcompanionlite" target="_blank">
             <button class="button"><i class="fab fa-google-play"></i>Download on Google Play</button>
@@ -141,32 +117,25 @@
             <button class="button"><i class="fab fa-app-store-ios"></i>Download on Apple App Store</button>
           </a>
         </div>
-
       </div>
-
     </div>
-
   </div>
-  <!-- project tile ends -->
-
-
-
+  <!-- project tile #1 ends -->
 
   <!-- project tile #2 begins -->
   <div class="container">
-
     <div class="project">
-      <div class="project-header"> <!-- project header row, collapse to column on mobile -->
+      <div class="project-header">
         <div class="project-icon">
           <img src="assets/DDH-calc.png" alt="">
         </div>
-        <div class="project-title"> <!-- title/subtitle container, display as column -->
+        <div class="project-title">
           <h2>Hip Ultrasound Calculator</h2>
           <p>Desktop Application for Booking Hip Ultrasounds in Newborns</p>
         </div>
       </div>
 
-      <div class="project-image"> <!-- project image container, switch between desktop and mobile image -->
+      <div class="project-image">
         <img class="img-desktop" src="assets/p1.png" alt="">
         <img class="img-mobile project-2" src="assets/ddh-hip-ultrasound-calc.png" alt="">
       </div>
@@ -181,33 +150,38 @@
         </p>
       </div>
 
-      <div>
-        <!-- add list of technologies used here -->
+      <div class="tech-list">
+        <div class="tech-row">
+          <i class="fab fa-react"></i>
+          <span class="">Electron</span>
+        </div>
+        <hr class="tech-divider">
+        <div class="tech-row">
+          <i class="fab fa-js-square"></i>
+          <span class="">Javascript</span>
+        </div>
+        <hr class="tech-divider">
+        <div class="tech-row">
+          <i class="fab fa-node-js"></i>
+          <span class="">Node JS</span>
+        </div>
+        <hr class="tech-divider">
+        <div class="tech-row">
+          <i class="fab fa-bootstrap"></i>
+          <span class="">Bootstrap</span>
+        </div>
       </div>
-
     </div>
 
   </div>
-  <!-- project tile ends -->
+  <!-- project tile #2 ends -->
 
-
-<!--
-<div class="test">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,256L80,250.7C160,245,320,235,480,208C640,181,800,139,960,112C1120,85,1280,75,1360,69.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-</div>
--->
-
-
-
-
-
-  <div class="footer">
-    <!-- BEGIN FOOTER -->
-    <footer class="container">
+  <!-- begin footer -->
+  <footer class="footer">
+    <div class="container">
       <div class="footer-inner">
         <h4 class="footer-title">Like what you see, or want to see more?</h4>
 
-        <!-- onclick this element will copy email to clipboard -->
         <a id="copy-email-footer">
           <div class="footer-row">
             <span class="">Send me an email:</span>
@@ -242,192 +216,13 @@
           </div>
         </a>
       </div>
+    </div>
+  </footer>
+  <!-- end footer -->
 
-
-
-    </footer>
-    <!-- END FOOTER -->
-
-  </div>
-
-
-
-  <!-- Tippy Development -->
-  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-
-
-  <script>
-
-
-    //tippy('[data-tippy-content]');
-
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // change tippy theme
-
-    /*
-try ontrigger and onuntrigger with external function
-    */
-
-
-
-
-
-
-
-
-
-
-
-
-    // !!!!!! saving progress
-    // tippy tooltip
-    tippy('#copy-email', {
-      // !!!! try adding a theme
-      // !!!! placement
-      placement: 'bottom',
-      hideOnClick: false,
-      trigger: 'mouseenter focus',
-      content: 'Copy email to clipboard',
-      onTrigger(instance) { // was onCreate
-
-        // add event listener to look for click
-        console.log('tippy triggered')
-        document.getElementById('copy-email').onclick = function() {
-          let clipboardData = String.fromCharCode(109, 105, 107, 101, 115, 116, 111, 110, 101, 104, 111, 117, 115, 101, 64, 112, 114, 111, 116, 111, 110, 109, 97, 105, 108, 46, 99, 111, 109)
-
-          // copy email to clipboard
-          navigator.clipboard.writeText(clipboardData).then(function() {
-            // success
-            console.log('data copied to clipboard');
-            instance.setProps({trigger: 'manual'});
-            instance.setContent('Email copied to clipboard');
-            instance.show();
-            setTimeout(function() {
-              instance.hide();
-              instance.setProps({trigger: 'mouseenter focus'});
-            }, 1500);
-          }, function() {
-            //failure
-            console.log('copy to clipboard failed');
-            window.location.href = 'mailto:' + clipboardData;
-          })
-        }
-      },
-      onHidden(instance) {
-        instance.setContent('Copy email to clipboard');
-        document.getElementById('copy-email').blur();
-        // try removing event listener to prevent repeated calls
-        //document.getElementById("copy-email").removeEventListener("click");
-      }
-    });
-
-
-
-    // !!!!!! saving progress
-    // tippy tooltip
-    tippy('#copy-email-footer', {
-      // !!!! try adding a theme
-      // !!!! placement
-      theme: 'footer-theme',
-      placement: 'top',
-      hideOnClick: false,
-      trigger: 'mouseenter focus',
-      content: 'Copy email to clipboard',
-      onTrigger(instance) { // was onCreate
-
-        // add event listener to look for click
-        console.log('tippy triggered')
-        document.getElementById('copy-email-footer').onclick = function() {
-          let clipboardData = String.fromCharCode(109, 105, 107, 101, 115, 116, 111, 110, 101, 104, 111, 117, 115, 101, 64, 112, 114, 111, 116, 111, 110, 109, 97, 105, 108, 46, 99, 111, 109)
-
-          // copy email to clipboard
-          navigator.clipboard.writeText(clipboardData).then(function() {
-            // success
-            console.log('data copied to clipboard');
-            instance.setProps({trigger: 'manual'});
-            instance.setContent('Email copied to clipboard');
-            instance.show();
-            setTimeout(function() {
-              instance.hide();
-              instance.setProps({trigger: 'mouseenter focus'});
-            }, 1500);
-          }, function() {
-            //failure
-            console.log('copy to clipboard failed');
-            window.location.href = 'mailto:' + clipboardData;
-          })
-        }
-      },
-      onHidden(instance) {
-        instance.setContent('Copy email to clipboard');
-        document.getElementById('copy-email-footer').blur();
-        // try removing event listener to prevent repeated calls
-        //document.getElementById("copy-email").removeEventListener("click");
-      }
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*
-    // !!!!!! this version works
-    // tippy tooltip
-    tippy('#copy-email', {
-      // !!!! try adding a theme
-      hideOnClick: false,
-      trigger: 'mouseenter focus',
-      content: 'Copy email to clipboard',
-      onCreate(instance) {
-        // add event listener to look for click
-        console.log('tippy created')
-        document.getElementById('copy-email').addEventListener('click', function() {
-          let clipboardData = String.fromCharCode(109, 105, 107, 101, 115, 116, 111, 110, 101, 104, 111, 117, 115, 101, 64, 112, 114, 111, 116, 111, 110, 109, 97, 105, 108, 46, 99, 111, 109)
-
-          // copy email to clipboard
-          navigator.clipboard.writeText(clipboardData).then(function() {
-            // success
-            console.log('data copied to clipboard')
-            instance.setProps({trigger: 'manual'});
-            instance.setContent('Email copied to clipboard');
-            instance.show();
-            setTimeout(function() {
-              instance.hide();
-              instance.setProps({trigger: 'mouseenter focus'});
-            }, 1500);
-          }, function() {
-            //failure
-            console.log('copy to clipboard failed');
-            window.location.href = 'mailto:' + clipboardData;
-          })
-        })
-      },
-      onHidden(instance) {
-        instance.setContent('Copy email to clipboard');
-        document.getElementById('copy-email').blur();
-        // try removing event listener to prevent repeated calls
-        //document.getElementById("copy-email").removeEventListener("click");
-      }
-    });
-  */
-
-
-
-
-
-  </script>
-
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
