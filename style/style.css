@@ -504,7 +504,7 @@ hr {
 
 /* below are the bootstrap breakpoints */
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
   }
@@ -514,7 +514,7 @@ hr {
 
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container, .container-sm, .container-md {
     max-width: 720px;
   }
@@ -529,13 +529,13 @@ hr {
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
     max-width: 960px;
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px;
   }
@@ -543,7 +543,7 @@ hr {
 
 /* switch directions */
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .jumbotron {
     padding: 6vw;
   }
@@ -562,7 +562,7 @@ hr {
 
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   .img-desktop {
     display: none;
@@ -570,11 +570,11 @@ hr {
 
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 
 }
 
