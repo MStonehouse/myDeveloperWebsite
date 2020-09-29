@@ -17,6 +17,13 @@ a {
 }
 
 
+hr {
+  border: none;
+  border-top: 1px solid #6c757d;
+}
+
+
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* don't forget to add a normalization library like normalize css */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -246,7 +253,7 @@ nav li a:hover {
 }
 
 .project-download i {
-  padding-right: 0.8rem;
+  /*padding-right: 0.8rem;*/
 }
 
 .button {
@@ -266,6 +273,18 @@ nav li a:hover {
   width: 100%;
 }
 
+.button i {
+  font-size: 1rem;
+  margin-right: 0.8rem;
+}
+
+.button img {
+  margin: 0;
+  margin-right: 0.8rem;
+  height: 22px;
+  vertical-align: middle;
+}
+
 .button:hover {
   background-color: #0961bf;
   color: white;
@@ -276,11 +295,6 @@ nav li a:hover {
 
 
 /* footer styling begins */
-.footer hr {
-  border: none;
-  border-top: 1px solid #6c757d;
-}
-
 .footer {
   background-color: #252a2f;
   color: #fff;
