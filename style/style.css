@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+a {
+  outline: none;
+}
+
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* don't forget to add a normalization library like normalize css */
@@ -30,6 +34,7 @@ nav {
 
 .nav-logo {
   height: 24px;
+  margin: 6px;
 }
 
 nav ul {
@@ -90,7 +95,8 @@ nav li a:hover {
 
 /* Jumbotron section styling begins */
 .jumbotron {
-  padding: 6vw 0;
+  padding: 6vw;
+
   /* set background color to match final image for loading */
   background-color: #343434;
   background-image: linear-gradient(to top, rgba(32, 35, 42, 0.5),  rgba(32, 35, 42, 0.5)), url("../assets/bg.jpg");
@@ -149,11 +155,11 @@ nav li a:hover {
 }
 
 .project {
-  border-radius: 5px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  margin: 4vw auto;
   padding: 16px;
   background-color: #fff;
+  border-radius: 0;
+  margin: 50px auto;
 }
 
 .project-header {
@@ -223,25 +229,7 @@ nav li a:hover {
   text-align: left;
 }
 
-.tech-list {
-  margin: 10px auto;
-  border: 1px solid #dfdfdf;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-}
 
-.tech-row {
-  text-align: center;
-  padding: 8px;
-  font-weight: 300;
-  font-size: 1.4rem;
-}
-
-.tech-divider {
-  border: none;
-  border-top: 1px solid #dfdfdf;
-}
 
 .project-download {
   margin-top: 20px;
@@ -275,6 +263,7 @@ nav li a:hover {
   cursor: pointer;
   background-color: #007bff;
   border: 2px solid transparent;
+  width: 100%;
 }
 
 .button:hover {
@@ -373,28 +362,28 @@ nav li a:hover {
 
 
 
-
-
-
-/* break points begin */
-/* not used */
-/*
-@media only screen and (min-width: 576px) {
-
+/* tech list styling begins */
+.tech-list {
+  margin: 10px auto;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
-@media only screen and (min-width: 768px) {
-
+.tech-row {
+  text-align: center;
+  padding: 8px;
+  font-weight: 300;
+  font-size: 1.4rem;
 }
 
-@media only screen and (min-width: 992px) {
-
+.tech-divider {
+  border: none;
+  border-bottom: 1px solid #dfdfdf;
 }
+/* tech list styling ends*/
 
-@media only screen and (min-width: 1200px) {
-
-}
-*/
 
 
 /* breakpoints begin */
@@ -404,8 +393,33 @@ nav li a:hover {
     max-width: 540px;
   }
 
+  /* change direction for tech list begins */
+  .tech-sm.tech-list {
+    flex-direction: row;
+  }
 
+  .tech-sm .tech-row {
+    flex: 1;
+  }
 
+  .tech-sm .tech-divider {
+    border: none;
+    border-right: 1px solid #dfdfdf;
+  }
+  /* change direction for tech list ends */
+
+  .jumbotron {
+    padding: 6vw 0;
+  }
+
+  .project {
+    border-radius: 5px;
+    margin: 4vw auto;
+  }
+
+  .button {
+    width: auto;
+  }
 
 }
 
@@ -413,6 +427,21 @@ nav li a:hover {
   .container, .container-sm, .container-md {
     max-width: 720px;
   }
+
+  /* change direction for tech list begins */
+  .tech-md.tech-list {
+    flex-direction: row;
+  }
+
+  .tech-md .tech-row {
+    flex: 1;
+  }
+
+  .tech-md .tech-divider {
+    border: none;
+    border-right: 1px solid #dfdfdf;
+  }
+  /* change direction for tech list ends */
 
   .project-header {
     flex-direction: row;
@@ -432,48 +461,42 @@ nav li a:hover {
   .container, .container-sm, .container-md, .container-lg {
     max-width: 960px;
   }
+
+  /* change direction for tech list begins */
+  .tech-lg.tech-list {
+    flex-direction: row;
+  }
+
+  .tech-lg .tech-row {
+    flex: 1;
+  }
+
+  .tech-lg .tech-divider {
+    border: none;
+    border-right: 1px solid #dfdfdf;
+  }
+  /* change direction for tech list ends */
 }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px;
   }
-}
 
-/* switch directions */
-
-@media (max-width: 576px) {
-  .jumbotron {
-    padding: 6vw;
+  /* change direction for tech list begins */
+  .tech-xl.tech-list {
+    flex-direction: row;
   }
 
-  .project {
-    border-radius: 0;
-    margin-bottom: 50px;
-    margin-top: 50px;
+  .tech-xl .tech-row {
+    flex: 1;
   }
 
-  .button {
-    width: 100%;
+  .tech-xl .tech-divider {
+    border: none;
+    border-right: 1px solid #dfdfdf;
   }
-
-
-
+  /* change direction for tech list ends */
 }
 
-@media (max-width: 768px) {
-  /*
-  .img-desktop {
-    display: none;
-  }
-  */
-}
-
-@media (max-width: 992px) {
-
-}
-
-@media (max-width: 1200px) {
-
-}
 /* break points end */
