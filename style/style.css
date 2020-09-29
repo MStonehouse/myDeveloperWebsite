@@ -199,6 +199,7 @@ nav li a:hover {
 
 .img-mobile{
   width: 100%;
+  display: block;
 }
 
 .img-mobile.project-1 {
@@ -210,6 +211,7 @@ nav li a:hover {
 }
 
 .img-desktop {
+  display: none;
   max-width: 860px;
   width: 100%;
   object-fit: contain;
@@ -420,6 +422,10 @@ nav li a:hover {
   .img-mobile {
     display: none;
   }
+
+  .img-desktop {
+    display: block;
+  }
 }
 
 @media (min-width: 992px) {
@@ -456,11 +462,11 @@ nav li a:hover {
 }
 
 @media (max-width: 768px) {
-
+  /*
   .img-desktop {
     display: none;
   }
-
+  */
 }
 
 @media (max-width: 992px) {
